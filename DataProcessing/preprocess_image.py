@@ -58,7 +58,7 @@ def moveAndRenameFile(train_dir: str = train_dir, preprocessed_dir: str = prepro
     :param preprocessed_dir : 이동시키고자 하고자 하는 경로
     '''
     
-    files = 0;
+    files = 0
     #create folder
     try:
         if not os.path.exists(preprocessed_dir):
@@ -74,7 +74,7 @@ def moveAndRenameFile(train_dir: str = train_dir, preprocessed_dir: str = prepro
         image_list = glob.glob(dir + r"/*")
 
         for image in image_list:
-            files += 1;
+            files += 1
             name = getFileName(image) # mask1
             oldfilename = name + ".jpg" # mask1.jpg
 
