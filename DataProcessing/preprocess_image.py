@@ -2,15 +2,20 @@
 
 import sys
 import os
-import glob
 import shutil
 from os import walk
+import glob
+import pandas as pd
 
 #server default train files directory
 train_dir = r"/opt/ml/input/data/train/images/"
 
 #preprocessd_dir
 preprocessed_dir = r"/opt/ml/input/data/train/processed_train_images/"
+
+#train.csv directory
+traincsv_path='/opt/ml/input/data/train/train.csv'
+traincsv=pd.read_csv(traincsv_path)
 
 #label mapping dictionary
 nameLabel: dict = {
@@ -84,7 +89,7 @@ def moveAndRenameFile(train_dir: str = train_dir, preprocessed_dir: str = prepro
             shutil.copyfile(oldfile, movefile) # move file
 
             #change name to new format("{processed_dir}/id_{label}")
-            newfile = preprocessed_dir + id + nameLabel[name] + ".jpg" # /opt/ml/input/data/train/processed_train_images/id_{lable}.jpg
+            newfile = preprocessed_dir + id + nameLabel[name] + ".jpg" # /opt/ml/input/data/train/processed_train_images/id_{label}.jpg
 
             os.rename(movefile, newfile)
     
@@ -93,8 +98,52 @@ def moveAndRenameFile(train_dir: str = train_dir, preprocessed_dir: str = prepro
     print("To : " + preprocessed_dir)
     print(f"preprocessed files : {files}")
 
+def makeNewTrainCsv(train_dir: str = traincsv_path, preprocessed_dir: str = preprocessed_dir):
+    '''
+    기존의 train.csv에 mask여부와 나이 구간 별로 column을 추가합니다.
+    : param  traincsv_path : 기존에 존재하던 train.csv가 있는 directory
+    : param preprocessed_dir : moveAndRenameFile의 결과로 copy된 이미지들이 존재하는 directory
+    '''
+    new_traincsv=pd.DataFrame(columns=['id','gender','mask','age','age_3','age_11','label','path']) # make new dataframe
+    preprocessed_train_images=glob(preprocessed_dir+'/*') # 모든 이미지의 경로 리스트에 저장
+
+    for path in preprocessed_train_images:
+        split_path=path.split('/')
+
+        id=split_path[len(split_path)-1].split('_')[0]
+        g=traincsv.loc[traincsv['id']==id,'gender']
+        gender= 0 if g.values[0]=='male' else 1
+        age=traincsv[traincsv['id']==id]['age'].values[0]
+        age_3=min(2,age//30)
+        age_11=age//10
+        
+        mask=split_path[len(split_path)-1].split('_')[1]
+        if mask==7:
+            mask=2
+        elif mask==1:
+            mask=1
+        else:
+            mask=0
+
+        label=mask*6+gender*3+age_3
+        
+        new_traincsv=new_traincsv.append({'id':id,
+                                            'gender':gender,
+                                            'path':path,
+                                            'mask':mask,
+                                            'age':age,
+                                            'age_3':age_3,
+                                            'age_11':age_11,
+                                            'label':label},ignore_index=True)
+
+        new_traincsv.to_csv("/opt/ml/input/data/train/preprocessed_train.csv")
+        print("Made preprocessed_train.csv in","/opt/ml/input/data/train/")
+    
+
 if __name__  == "__main__" :
     if len(sys.argv) == 1:
         moveAndRenameFile()
     if len(sys.argv) == 3:
         moveAndRenameFile(sys.argv[1], sys.argv[2])
+    if os.path.isfile("/opt/ml/input/data/train/preprocessed_train.csv") == False:
+        makeNewTrainCsv()
