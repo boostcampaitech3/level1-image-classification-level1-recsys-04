@@ -108,26 +108,28 @@ def makeNewTrainCsv(train_dir: str = traincsv_path, preprocessed_dir: str = prep
     preprocessed_train_images=glob(preprocessed_dir+'/*') # 모든 이미지의 경로 리스트에 저장
 
     for path in preprocessed_train_images:
-        split_path=path.split('/')
+        split_path = path.split('/')
+        id = split_path[-1].split('_')[0]
+        g = traincsv.loc[traincsv['id']==id,'gender']
+        gender = 0 if g.values[0] == 'male' else 1
 
-        id=split_path[len(split_path)-1].split('_')[0]
-        g=traincsv.loc[traincsv['id']==id,'gender']
-        gender= 0 if g.values[0]=='male' else 1
-        age=traincsv[traincsv['id']==id]['age'].values[0]
-        age_3=min(2,age//30)
-        age_11=age//10
+        age = traincsv[traincsv['id'] == id]['age'].values[0]
+        age_3 = min(2, age // 30)
+        age_11 = age // 10
         
-        mask=split_path[len(split_path)-1].split('_')[1]
-        if mask==7:
-            mask=2
-        elif mask==1:
-            mask=1
+        mask = split_path[-1].split('_')[1][0]
+        mask = int(mask)
+        
+        if mask == 7:
+            mask = 2
+        elif mask == 1:
+            mask = 1
         else:
-            mask=0
+            mask = 0
 
-        label=mask*6+gender*3+age_3
+        label = mask * 6 + gender * 3 + age_3
         
-        new_traincsv=new_traincsv.append({'id':id,
+        new_traincsv = new_traincsv.append({'id':id,
                                             'gender':gender,
                                             'path':path,
                                             'mask':mask,
@@ -136,8 +138,8 @@ def makeNewTrainCsv(train_dir: str = traincsv_path, preprocessed_dir: str = prep
                                             'age_11':age_11,
                                             'label':label},ignore_index=True)
 
-        new_traincsv.to_csv("/opt/ml/input/data/train/preprocessed_train.csv")
-        print("Made preprocessed_train.csv in","/opt/ml/input/data/train/")
+    new_traincsv.to_csv("/opt/ml/input/data/train/preprocessed_train.csv")
+    print("Made preprocessed_train.csv in","/opt/ml/input/data/train/")
     
 
 if __name__  == "__main__" :
