@@ -63,7 +63,7 @@ def moveAndRenameFile(train_dir: str = train_dir, preprocessed_dir: str = prepro
     try:
         if not os.path.exists(preprocessed_dir):
             os.makedirs(preprocessed_dir)
-    except OSErrpr:
+    except OSError:
         print("Error: creating directory" + preprocessed_dir)
     
     train_dir_list = glob.glob(train_dir + r"*", recursive =True)
