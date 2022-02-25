@@ -7,17 +7,20 @@ from typing import Tuple, List
 import numpy as np
 import torch
 from PIL import Image
-from torch.utils.data import Dataset, Subset, random_split
+from torch.utils.data import Dataset, Subset, random_split, WeightedRandomSampler
 from torchvision import transforms
 from torchvision.transforms import *
+import colorsys
 
-import pandas as pd
 
+#이미지 확장자의 종류를 담고 있는 리스트
 IMG_EXTENSIONS = [
     ".jpg", ".JPG", ".jpeg", ".JPEG", ".png",
     ".PNG", ".ppm", ".PPM", ".bmp", ".BMP",
 ]
 
+#endswith() - 지정한 점미사로 끝나면 True, 아니면 False를 반환
+#amy()
 def is_image_file(filename):
     return any(filename.endswith(extension) for extension in IMG_EXTENSIONS)
 
@@ -40,7 +43,7 @@ class AddGaussianNoise(object):
         직접 구현하여 사용할 수 있습니다.
     """
 
-    def __init__(self, mean=0., std=1.):
+    def __init__(self,mean=0., std=1.):
         self.std = std
         self.mean = mean
 
@@ -48,18 +51,26 @@ class AddGaussianNoise(object):
         return tensor + torch.randn(tensor.size()) * self.std + self.mean
 
     def __repr__(self):
-        return self.__class__.__name__ + '(mean={0}, std={1})'.format(self.mean, self.std)
+        return self.__class__.__name__ + '(g_mean={0}, g_std={1})'.format(self.mean, self.std)
 
+class RGBtoHSL :
+    def __init__(self) :
+        pass
+    def __call__(self, tensor) :
+        hls = torch.tensor([colorsys.rgb_to_hls(*c) for c in (tensor/255).reshape((128*96),3)])
+        hls = hls.reshape(128,96,3)
+        return hls
+    def __repr__(self) :
+        pass
 
 class CustomAugmentation:
     def __init__(self, resize, mean, std, **args):
         self.transform = transforms.Compose([
-            CenterCrop((320, 256)),
             Resize(resize, Image.BILINEAR),
-            ColorJitter(0.1, 0.1, 0.1, 0.1),
+            #CenterCrop((72,50)),
             ToTensor(),
-            Normalize(mean=mean, std=std),
-            AddGaussianNoise()
+            ColorJitter(brightness=(1.5,2)),
+            Normalize(mean=mean, std=std)
         ])
 
     def __call__(self, image):
@@ -124,6 +135,7 @@ class MaskBaseDataset(Dataset):
     mask_labels = []
     gender_labels = []
     age_labels = []
+    class_labels = []
 
     def __init__(self, data_dir, mean=(0.548, 0.504, 0.479), std=(0.237, 0.247, 0.246), val_ratio=0.2):
         self.data_dir = data_dir
@@ -134,6 +146,18 @@ class MaskBaseDataset(Dataset):
         self.transform = None
         self.setup()
         self.calc_statistics()
+
+    def get_sampler(self) :
+        class_sample_count = np.array([len(np.where(self.class_labels == t)[0]) for t in np.unique(self.class_labels)])
+        weight = 1. / class_sample_count
+        samples_weight = np.array([weight[t] for t in self.class_labels])
+        samples_weight = torch.from_numpy(samples_weight)
+        samples_weight = samples_weight.double()
+        n_val = int(len(self) * self.val_ratio)
+        n_train = len(self) - n_val
+        train_weight, _ = random_split(samples_weight, [n_train, n_val], generator=torch.Generator().manual_seed(42))
+        train_sampler = WeightedRandomSampler(train_weight, len(train_weight))
+        return train_sampler
 
     def setup(self):
         profiles = os.listdir(self.data_dir)
@@ -158,6 +182,7 @@ class MaskBaseDataset(Dataset):
                 self.mask_labels.append(mask_label)
                 self.gender_labels.append(gender_label)
                 self.age_labels.append(age_label)
+                self.class_labels.append(self.encode_multi_class(mask_label, gender_label, age_label))
 
     def calc_statistics(self):
         has_statistics = self.mean is not None and self.std is not None
@@ -233,7 +258,7 @@ class MaskBaseDataset(Dataset):
         """
         n_val = int(len(self) * self.val_ratio)
         n_train = len(self) - n_val
-        train_set, val_set = random_split(self, [n_train, n_val])
+        train_set, val_set = random_split(self, [n_train, n_val], generator=torch.Generator().manual_seed(42))
         return train_set, val_set
 
 
@@ -292,9 +317,28 @@ class MaskSplitByProfileDataset(MaskBaseDataset):
                     cnt += 1
 
     def split_dataset(self) -> List[Subset]:
+        print([Subset(self, indices) for phase, indices in self.indices.items()])
         return [Subset(self, indices) for phase, indices in self.indices.items()]
-
-
+    
+    def get_sampler(self, phase) :
+        _multi_class = []
+        for _idx in self.indices[phase]:
+            _temp = self.encode_multi_class(self.mask_labels[_idx],
+                                    self.gender_labels[_idx],
+                                    self.age_labels[_idx])
+            _multi_class.append(_temp)
+        
+        class_sample_count = np.array([len(np.where(_multi_class == t)[0]) for t in np.unique(_multi_class)])
+        weight = 1. / class_sample_count
+        samples_weight = np.array([weight[t] for t in _multi_class])
+        samples_weight = torch.from_numpy(samples_weight)
+        samples_weight = samples_weight.double()
+        #n_val = int(len(self) * self.val_ratio)
+        #n_train = len(self) - n_val
+        #train_weight, _ = random_split(samples_weight, [n_train, n_val], generator=torch.Generator().manual_seed(42))
+        train_sampler = WeightedRandomSampler(samples_weight, len(samples_weight))
+        return train_sampler
+        
 class TestDataset(Dataset):
     def __init__(self, img_paths, resize, mean=(0.548, 0.504, 0.479), std=(0.237, 0.247, 0.246)):
         self.img_paths = img_paths
@@ -303,7 +347,6 @@ class TestDataset(Dataset):
             ToTensor(),
             Normalize(mean=mean, std=std),
         ])
-
 
     def __getitem__(self, index):
         image = Image.open(self.img_paths[index])
@@ -314,85 +357,3 @@ class TestDataset(Dataset):
 
     def __len__(self):
         return len(self.img_paths)
-
-#전처리 된 데이터에 대한 Dataset
-class PreProcessedDataset(Dataset):
-    def __init__(self, data_dir : str,
-                 transform = None,
-                 train : bool = True,
-                 query : str = None, # e.g : label in [0,1,2]
-                 option : str = "label",
-                 val_ratio : float = 0.2) -> None:
-        '''
-        Preprocessed_image.csv 로부터 Dataset을 로드합니다
-
-        :param data_dir: preprocessed_image.csv 경로
-        :param transform : 적용할 transform
-        :param train : True, False
-        :param query : queryString e.g "age > 30"
-        :param option : "label", "age", "age_3", "age_11"
-        :val_ratio : train, valid data split 비율 default 0.2
-        '''
-
-        self.path = data_dir            #preprocessed_train.csv path
-        self.transform = transform
-        self.isTrain = train
-        self.val_ratio = val_ratio
-        
-        self.option = option
-        _df = pd.read_csv(data_dir)
-        
-        self.imageLabels = []
-        
-        self.df, self.imageLabels = self._setup(_df, query)
-        
-    def __getitem__(self,idx):
-        image = Image.open(self.df["path"].iloc[idx])
-        
-        label = self.imageLabels[idx]
-
-        #image = ToTensor(image)
-        if self.transform != None:
-            image = self.transform(image)
-
-        if self.isTrain == True:
-            return image, label
-        else:
-            return image
-
-    def __len__(self) -> int:
-        return len(self.imageLabels)
-
-    def _setup(self, dataFrame, queryString : str = None) -> Tuple[pd.DataFrame, list] :
-        
-        #Dataframe 경고 mute 옵션
-        pd.set_option('mode.chained_assignment',  None)
-
-        #Query에 따라 data를 가져옴
-        if queryString == None:
-            df = dataFrame
-        else:
-            df =  dataFrame.query(queryString)
-        df.drop(['Unnamed: 0'], axis = 1, inplace = True)
-
-        labels = None
-        if self.option in ["label","age","age_3","age_11"]:
-            labels = df[self.option]
-        else:
-            raise ValueError(f"option value should be one of 'label', 'age', 'age_3', 'age_11' : {self.option}" )
-
-        #print(df.head(5))
-        return df, labels
-
-
-    def split_dataset(self) -> Tuple[Subset, Subset]:
-        n_val = int(len(self) * self.val_ratio)
-        n_train = len(self) - n_val
-        train_set, val_set = random_split(self, [n_train, n_val])
-        return train_set, val_set
-
-    def getDataFrame(self):
-        return self.df
-    
-    def getLabel(self):
-        return self.imageLabels
