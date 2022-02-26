@@ -98,11 +98,12 @@ def moveAndRenameFile(train_dir: str = train_dir, preprocessed_dir: str = prepro
     print("To : " + preprocessed_dir)
     print(f"preprocessed files : {files}")
 
-def makeNewTrainCsv(train_dir: str = traincsv_path, preprocessed_dir: str = preprocessed_dir):
+def makeNewTrainCsv(train_dir: str = traincsv_path, preprocessed_dir: str = preprocessed_dir)->pd.DataFrame:
     '''
-    기존의 train.csv에 mask여부와 나이 구간 별로 column을 추가합니다.
+    기존의 train.csv에 mask여부와 나이 구간 별로 column을 추가합니다. 새로 csv로 만들지 않고 dataframe을 반환합니다.
     : param  traincsv_path : 기존에 존재하던 train.csv가 있는 directory
     : param preprocessed_dir : moveAndRenameFile의 결과로 copy된 이미지들이 존재하는 directory
+    : pd.DataFrame : 새로 만들어진 train.csv 대신 dataframe
     '''
     new_traincsv=pd.DataFrame(columns=['id','gender','mask','age','age_3','age_11','label','path']) # make new dataframe
     preprocessed_train_images=glob(preprocessed_dir+'/*') # 모든 이미지의 경로 리스트에 저장
@@ -138,8 +139,8 @@ def makeNewTrainCsv(train_dir: str = traincsv_path, preprocessed_dir: str = prep
                                             'age_11':age_11,
                                             'label':label},ignore_index=True)
 
-    new_traincsv.to_csv("/opt/ml/input/data/train/preprocessed_train.csv")
-    print("Made preprocessed_train.csv in","/opt/ml/input/data/train/")
+    print("Made preprocessed_train")
+    return new_traincsv
     
 
 if __name__  == "__main__" :
