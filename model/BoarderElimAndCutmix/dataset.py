@@ -10,7 +10,6 @@ from PIL import Image
 from torch.utils.data import Dataset, Subset, random_split, WeightedRandomSampler
 from torchvision import transforms
 from torchvision.transforms import *
-import colorsys
 
 from cutmix import cutmix						 
 
@@ -37,33 +36,6 @@ class BaseAugmentation:
 
     def __call__(self, image):
         return self.transform(image)
-
-
-class AddGaussianNoise(object):
-    """
-        transform 에 없는 기능들은 이런식으로 __init__, __call__, __repr__ 부분을
-        직접 구현하여 사용할 수 있습니다.
-    """
-
-    def __init__(self,mean=0., std=1.):
-        self.std = std
-        self.mean = mean
-
-    def __call__(self, tensor):
-        return tensor + torch.randn(tensor.size()) * self.std + self.mean
-
-    def __repr__(self):
-        return self.__class__.__name__ + '(g_mean={0}, g_std={1})'.format(self.mean, self.std)
-
-class RGBtoHSL :
-    def __init__(self) :
-        pass
-    def __call__(self, tensor) :
-        hls = torch.tensor([colorsys.rgb_to_hls(*c) for c in (tensor/255).reshape((128*96),3)])
-        hls = hls.reshape(128,96,3)
-        return hls
-    def __repr__(self) :
-        pass
 
 class CustomAugmentation:
     def __init__(self, resize, mean, std, **args):
@@ -233,6 +205,7 @@ class MaskBaseDataset(Dataset):
         gender_label = self.get_gender_label(index)
         age_label = self.get_age_label(index)
         multi_class_label = self.encode_multi_class(mask_label, gender_label, age_label)
+
         if index in self.indices["train"] :
             _transform =  self.transform
         else :
@@ -405,6 +378,7 @@ class CutMixDataset(MaskSplitByProfileDataset):
                     gender_label = GenderLabels.from_str(gender)
                     age_label = AgeLabels.from_number(age)
                     age11_label = Age11Labels.labeling(age)
+
                     if (27<=int(age)<=29) or (57<=int(age)<=59) :
                         continue
 
@@ -443,7 +417,7 @@ class CutMixDataset(MaskSplitByProfileDataset):
 
             image = cutmix(_image,_image2)
         else :           
-            image = self.transform(_image)
+            image = BaseAugmentation()(_image)
             
         
         return image, multi_class_label
@@ -462,7 +436,6 @@ class CutMixDataset(MaskSplitByProfileDataset):
         return random.choice(self.class_idx[label]) #label 별 random idx
 
     def split_dataset(self) -> List[Subset]:
-        #print([Subset(self, indices) for phase, indices in self.indices.items()])
         return [Subset(self, indices) for phase, indices in self.indices.items()]
 
 class CustomSubset(Subset):
@@ -481,11 +454,7 @@ class CustomSubset(Subset):
 class TestDataset(Dataset):
     def __init__(self, img_paths, resize, mean=(0.548, 0.504, 0.479), std=(0.237, 0.247, 0.246)):
         self.img_paths = img_paths
-        self.transform = transforms.Compose([
-            Resize(resize, Image.BILINEAR),
-            ToTensor(),
-            Normalize(mean=mean, std=std),
-        ])
+        self.transform = BaseAugmentation()
 
     def __getitem__(self, index):
         image = Image.open(self.img_paths[index])
