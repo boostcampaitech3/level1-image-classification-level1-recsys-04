@@ -55,12 +55,23 @@ class MyModel(nn.Module):
         return x
 
 
-class EfficientNet_MultiLabel(nn.Module):
+class EfficientNet_MultiLabel_B4(nn.Module):
     def __init__(self, in_channels=3, num_classes=3):
-        super(EfficientNet_MultiLabel, self).__init__()
+        super(EfficientNet_MultiLabel_B4, self).__init__()
         self.in_channels = in_channels
         self.num_classes = num_classes
         self.network = EfficientNet.from_pretrained('efficientnet-b4', in_channels=self.in_channels, num_classes=self.num_classes)
+        print (f"@ Model: EfficientNet_MultiLabel called with num_classes={num_classes}")
+
+    def forward(self, x):
+        return self.network(x)
+
+class EfficientNet_MultiLabel_B5(nn.Module):
+    def __init__(self, in_channels=3, num_classes=3):
+        super(EfficientNet_MultiLabel_B5, self).__init__()
+        self.in_channels = in_channels
+        self.num_classes = num_classes
+        self.network = EfficientNet.from_pretrained('efficientnet-b5', in_channels=self.in_channels, num_classes=self.num_classes)
         print (f"@ Model: EfficientNet_MultiLabel called with num_classes={num_classes}")
 
     def forward(self, x):
