@@ -1,0 +1,40 @@
+----------------EPOCH : 0------------------
+Age : 0, Accuracy By Age : 0.99%
+Age : 1, Accuracy By Age : 0.94%
+Age : 2, Accuracy By Age : 0.83%
+----------------EPOCH : 1------------------
+Age : 0, Accuracy By Age : 0.99%
+Age : 1, Accuracy By Age : 0.88%
+Age : 2, Accuracy By Age : 0.98%
+----------------EPOCH : 2------------------
+Age : 0, Accuracy By Age : 0.99%
+Age : 1, Accuracy By Age : 0.95%
+Age : 2, Accuracy By Age : 0.94%
+----------------EPOCH : 3------------------
+Age : 0, Accuracy By Age : 0.99%
+Age : 1, Accuracy By Age : 0.97%
+Age : 2, Accuracy By Age : 0.87%
+----------------EPOCH : 4------------------
+Age : 0, Accuracy By Age : 0.99%
+Age : 1, Accuracy By Age : 0.95%
+Age : 2, Accuracy By Age : 0.97%
+----------------EPOCH : 5------------------
+Age : 0, Accuracy By Age :  1.0%
+Age : 1, Accuracy By Age : 0.96%
+Age : 2, Accuracy By Age : 0.98%
+----------------EPOCH : 6------------------
+Age : 0, Accuracy By Age :  1.0%
+Age : 1, Accuracy By Age : 0.97%
+Age : 2, Accuracy By Age : 0.92%
+----------------EPOCH : 7------------------
+Age : 0, Accuracy By Age : 0.99%
+Age : 1, Accuracy By Age : 0.98%
+Age : 2, Accuracy By Age : 0.96%
+----------------EPOCH : 8------------------
+Age : 0, Accuracy By Age : 0.99%
+Age : 1, Accuracy By Age : 0.98%
+Age : 2, Accuracy By Age : 0.97%
+----------------EPOCH : 9------------------
+Age : 0, Accuracy By Age :  1.0%
+Age : 1, Accuracy By Age : 0.97%
+Age : 2, Accuracy By Age : 0.97%

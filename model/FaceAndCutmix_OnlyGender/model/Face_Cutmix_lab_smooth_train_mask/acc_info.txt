@@ -1,0 +1,8 @@
+----------------EPOCH : 0------------------
+Mask : 0, Accuracy By Mask : 0.99%
+Mask : 1, Accuracy By Mask :  1.0%
+Mask : 2, Accuracy By Mask :  1.0%
+----------------EPOCH : 1------------------
+Mask : 0, Accuracy By Mask :  1.0%
+Mask : 1, Accuracy By Mask :  1.0%
+Mask : 2, Accuracy By Mask :  1.0%
