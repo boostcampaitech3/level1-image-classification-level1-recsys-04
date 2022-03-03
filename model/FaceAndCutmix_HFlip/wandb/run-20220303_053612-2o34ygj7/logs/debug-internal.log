@@ -1,0 +1,1349 @@
+2022-03-03 05:36:13,787 INFO    MainThread:7336 [internal.py:wandb_internal():92] W&B internal server running at pid: 7336, started at: 2022-03-03 05:36:13.787324
+2022-03-03 05:36:13,790 DEBUG   SenderThread:7336 [sender.py:send():235] send: header
+2022-03-03 05:36:13,790 INFO    WriterThread:7336 [datastore.py:open_for_write():77] open: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/run-2o34ygj7.wandb
+2022-03-03 05:36:13,791 DEBUG   SenderThread:7336 [sender.py:send():235] send: run
+2022-03-03 05:36:14,028 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: check_version
+2022-03-03 05:36:14,030 INFO    SenderThread:7336 [dir_watcher.py:__init__():169] watching files in: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files
+2022-03-03 05:36:14,030 INFO    SenderThread:7336 [sender.py:_start_run_threads():812] run started: 2o34ygj7 with start time 1646253372
+2022-03-03 05:36:14,030 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 05:36:14,031 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 05:36:14,031 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: check_version
+2022-03-03 05:36:14,120 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: run_start
+2022-03-03 05:36:14,124 DEBUG   HandlerThread:7336 [meta.py:__init__():37] meta init
+2022-03-03 05:36:14,124 DEBUG   HandlerThread:7336 [meta.py:__init__():51] meta init done
+2022-03-03 05:36:14,124 DEBUG   HandlerThread:7336 [meta.py:probe():211] probe
+2022-03-03 05:36:14,131 DEBUG   HandlerThread:7336 [meta.py:_setup_git():201] setup git
+2022-03-03 05:36:14,157 DEBUG   HandlerThread:7336 [meta.py:_setup_git():208] setup git done
+2022-03-03 05:36:14,158 DEBUG   HandlerThread:7336 [meta.py:_save_pip():55] save pip
+2022-03-03 05:36:14,158 DEBUG   HandlerThread:7336 [meta.py:_save_pip():69] save pip done
+2022-03-03 05:36:14,158 DEBUG   HandlerThread:7336 [meta.py:_save_conda():76] save conda
+2022-03-03 05:36:15,033 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/conda-environment.yaml
+2022-03-03 05:36:15,033 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/requirements.txt
+2022-03-03 05:36:15,034 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 05:36:18,363 DEBUG   HandlerThread:7336 [meta.py:_save_conda():86] save conda done
+2022-03-03 05:36:18,363 DEBUG   HandlerThread:7336 [meta.py:probe():249] probe done
+2022-03-03 05:36:18,486 DEBUG   SenderThread:7336 [sender.py:send():235] send: files
+2022-03-03 05:36:18,486 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-03-03 05:36:18,492 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:36:18,493 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:36:18,682 DEBUG   SenderThread:7336 [sender.py:send():235] send: telemetry
+2022-03-03 05:36:18,682 DEBUG   SenderThread:7336 [sender.py:send():235] send: telemetry
+2022-03-03 05:36:18,682 DEBUG   SenderThread:7336 [sender.py:send():235] send: run
+2022-03-03 05:36:19,022 INFO    SenderThread:7336 [sender.py:send_run():710] updated run: 2o34ygj7
+2022-03-03 05:36:19,034 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/conda-environment.yaml
+2022-03-03 05:36:19,035 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/config.yaml
+2022-03-03 05:36:19,035 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-metadata.json
+2022-03-03 05:36:19,035 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:36:19,096 INFO    Thread-11 :7336 [upload_job.py:push():137] Uploaded file /tmp/tmp1l8j45_gwandb/36w2lc0b-wandb-metadata.json
+2022-03-03 05:36:30,860 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-03 05:36:30,860 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: log_artifact
+2022-03-03 05:36:31,039 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_0_57782f461dbeb346088e.table.json
+2022-03-03 05:36:31,040 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table
+2022-03-03 05:36:31,040 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media
+2022-03-03 05:36:31,455 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 05:36:32,358 INFO    Thread-13 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/47/b5a0b23ef1f7392d345e610d486b21
+2022-03-03 05:36:32,662 INFO    Thread-14 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/00/80b952c53dd5d8771ac0fe142ab7df
+2022-03-03 05:36:33,077 INFO    Thread-18 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/0f/61bfdd4bfb7d2ffc58750460ef9425
+2022-03-03 05:36:33,078 INFO    Thread-38 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/d0/9b0713dff5d7b438a9d60a3a8f7ecd
+2022-03-03 05:36:33,082 INFO    Thread-39 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/d9/04efdf761f19f0d350f0b44e17ab4e
+2022-03-03 05:36:33,092 INFO    Thread-23 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/60/bdd1b818a01dd8b05e1e627c0ef0cf
+2022-03-03 05:36:33,095 INFO    Thread-26 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/71/04dbdda1591bd5808887bee78742e3
+2022-03-03 05:36:33,104 INFO    Thread-43 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ec/9100acfad8cac5ee5a87c094a25e07
+2022-03-03 05:36:33,124 INFO    Thread-24 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/67/2a0914a8e45b1ab030299be52015d0
+2022-03-03 05:36:33,133 INFO    Thread-15 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/03/d6e2c5f140e14d4f544157494070c5
+2022-03-03 05:36:33,165 INFO    Thread-37 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c2/ba501978103447d1b9b720a6565681
+2022-03-03 05:36:33,172 INFO    Thread-17 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/07/0ca21e225ad508d92ee785612f64b5
+2022-03-03 05:36:33,189 INFO    Thread-33 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/92/061ba0d60a94661dfe42dccd56ee87
+2022-03-03 05:36:33,239 INFO    Thread-36 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/9b/59b5acdb7f27c31c30412cdc606176
+2022-03-03 05:36:33,242 INFO    Thread-21 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/23/98049409d2ba2cbdc28d085afe5344
+2022-03-03 05:36:33,245 INFO    Thread-30 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/87/3b714971702a60b6f5e82f37c58224
+2022-03-03 05:36:33,246 INFO    Thread-16 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/03/dd190aabdc0abb6048b28f27ed9d4c
+2022-03-03 05:36:33,249 INFO    Thread-44 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ed/3e83afde9dc8ed921bfe0afe387632
+2022-03-03 05:36:33,252 INFO    Thread-32 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/90/defd3875409cd5094da77d6ddf7c8e
+2022-03-03 05:36:33,257 INFO    Thread-28 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/72/bcce1355423dd7124aeeca333602b9
+2022-03-03 05:36:33,260 INFO    Thread-42 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e1/9a0c887d9c52726f942690aa7e1e8c
+2022-03-03 05:36:33,268 INFO    Thread-45 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ff/ed275f23e553e4ed4bc9ea34166cba
+2022-03-03 05:36:33,269 INFO    Thread-35 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/97/5952e889a05740b00262068c2acf04
+2022-03-03 05:36:33,275 INFO    Thread-20 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/21/25994b5f1d5b824ecf32edaa753da6
+2022-03-03 05:36:33,276 INFO    Thread-27 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/71/ecf83fa91f523816b7d158b00036e8
+2022-03-03 05:36:33,278 INFO    Thread-31 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/8c/0a664ad0ecae4d8284ba8d1dd29603
+2022-03-03 05:36:33,286 INFO    Thread-41 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/de/c9b72017e76eab3d35e70f9b9570be
+2022-03-03 05:36:33,288 INFO    Thread-29 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/86/e0233412ef70617a6e22e2b291c5e8
+2022-03-03 05:36:33,290 INFO    Thread-22 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/3c/a0237a8a3ee21bd3af175dffe5a0ea
+2022-03-03 05:36:33,291 INFO    Thread-40 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/dd/7df5ba354cbbd7a859cc34ded472c3
+2022-03-03 05:36:33,297 INFO    Thread-25 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/6f/d0f0018ea6177aee669c795f741834
+2022-03-03 05:36:33,309 INFO    Thread-19 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/15/d11bfdb8e7c95fa6445efc236e83e0
+2022-03-03 05:36:33,460 INFO    Thread-34 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/95/31106bdf2038763d4dd971039b44b8
+2022-03-03 05:36:33,684 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:36:34,422 INFO    SenderThread:7336 [sender.py:send_request_log_artifact():976] logged artifact run-2o34ygj7-Train_Sample_table - {'id': 'QXJ0aWZhY3Q6OTQwNTU2MTc=', 'digest': 'afe711b773d76f4ac752d03655eaef2e', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0OTg1NTU0', 'latestArtifact': None}, 'version': 'latest'}
+2022-03-03 05:36:34,422 DEBUG   SenderThread:7336 [sender.py:send():235] send: files
+2022-03-03 05:36:34,423 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file media/table/Train_Sample_table_0_57782f461dbeb346088e.table.json with policy now
+2022-03-03 05:36:34,423 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:36:35,032 INFO    Thread-46 :7336 [upload_job.py:push():137] Uploaded file /tmp/tmp1l8j45_gwandb/vv6dbkgs-media/table/Train_Sample_table_0_57782f461dbeb346088e.table.json
+2022-03-03 05:36:42,269 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:36:45,048 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/config.yaml
+2022-03-03 05:36:49,623 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:36:49,624 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:37:01,055 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:37:04,811 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:37:04,811 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:37:12,418 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:37:20,009 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:37:20,009 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:37:35,200 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:37:35,200 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:37:37,076 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:37:42,557 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:37:50,393 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:37:50,393 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:38:05,582 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:38:05,582 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:38:12,695 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:38:13,092 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:38:20,781 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:38:20,782 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:38:36,019 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:38:36,019 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:38:42,850 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:38:47,107 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:38:51,211 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:38:51,212 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:39:06,400 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:39:06,400 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:39:12,990 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:39:21,587 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:39:21,588 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:39:23,124 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:39:36,776 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:39:36,776 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:39:43,136 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:39:52,008 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:39:52,008 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:39:57,140 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:40:07,190 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:40:07,190 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:40:13,274 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:40:22,380 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:40:22,381 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:40:33,156 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:40:37,569 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:40:37,570 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:40:43,409 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:40:52,759 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:40:52,760 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:41:07,948 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:41:07,949 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:41:09,172 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:41:13,550 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:41:23,133 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:41:23,134 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:41:38,324 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:41:38,324 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:41:43,688 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:41:45,188 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:41:53,521 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:41:53,521 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:42:08,720 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:42:08,721 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:42:13,827 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:42:21,205 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:42:23,912 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:42:23,913 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:42:39,101 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:42:39,101 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:42:43,984 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:42:54,295 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:42:54,295 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:42:57,222 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:43:09,482 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:43:09,483 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:43:14,130 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:43:24,673 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:43:24,673 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:43:33,238 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:43:39,864 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:43:39,864 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:43:44,271 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:43:55,058 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:43:55,058 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:44:07,254 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:44:10,255 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:44:10,255 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:44:14,407 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:44:25,448 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:44:25,448 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:44:40,643 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:44:40,643 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:44:43,274 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:44:44,549 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:44:55,836 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:44:55,836 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:45:11,078 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:45:11,078 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:45:14,686 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:45:19,291 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:45:26,265 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:45:26,266 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:45:41,450 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:45:41,451 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:45:44,821 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:45:55,308 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:45:56,646 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:45:56,647 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:46:11,837 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:46:11,838 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:46:14,956 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:46:27,025 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:46:27,025 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:46:29,325 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:46:42,214 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:46:42,215 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:46:45,093 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:46:57,393 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:46:57,393 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:47:05,341 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:47:12,578 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:47:12,579 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:47:15,243 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:47:27,851 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:47:27,852 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:47:41,361 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:47:43,047 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:47:43,047 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:47:45,385 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:47:58,234 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:47:58,234 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:48:13,428 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:48:13,428 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:48:15,531 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:48:17,377 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:48:28,617 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:48:28,618 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:48:35,386 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:48:43,809 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:48:43,809 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:48:45,671 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:48:58,993 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:48:58,994 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:49:14,181 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:49:14,181 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:49:15,815 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:49:29,376 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:49:29,377 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:49:44,565 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:49:44,566 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:49:45,953 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:49:59,757 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:49:59,757 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:50:14,950 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:50:14,951 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:50:16,087 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:50:29,977 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 05:50:29,978 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 05:50:29,979 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 05:50:29,980 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 05:50:29,980 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 05:50:29,980 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 05:50:29,980 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 05:50:29,981 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 05:50:30,159 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:50:30,159 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:50:30,438 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 05:50:32,440 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:50:42,272 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-03 05:50:42,273 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: log_artifact
+2022-03-03 05:50:42,444 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_2_76efea366ec641734b67.table.json
+2022-03-03 05:50:42,445 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table
+2022-03-03 05:50:42,671 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 05:50:45,351 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:50:46,545 INFO    Thread-53 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/27/ba7921f3a761ce87c2bedcc289a364
+2022-03-03 05:50:46,550 INFO    Thread-79 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/eb/16e9bce770efaa0d1bea021e0787ae
+2022-03-03 05:50:46,553 INFO    Thread-58 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/5e/35a77471fb0801d6ba6f3a254b99a9
+2022-03-03 05:50:46,573 INFO    Thread-76 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/d8/ccee3e088af2ee872ada501297460c
+2022-03-03 05:50:46,607 INFO    Thread-73 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c2/7003099e018cfb62498acff4112fa3
+2022-03-03 05:50:46,631 INFO    Thread-75 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ce/d502ec4941cfb76501868f70f24610
+2022-03-03 05:50:46,689 INFO    Thread-77 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e2/064f6cda21676b9e636164f21dfffc
+2022-03-03 05:50:46,690 INFO    Thread-48 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/49/87f23745255d4cc62545240f78e777
+2022-03-03 05:50:46,706 INFO    Thread-74 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/cc/62bc5d1bb90a3ca6c7b041f463da09
+2022-03-03 05:50:46,708 INFO    Thread-49 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/09/c1d27e03dd58f89ee9465accde7ba5
+2022-03-03 05:50:46,728 INFO    Thread-55 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/3b/aec7e37116f7b310f13b804acbd59e
+2022-03-03 05:50:46,730 INFO    Thread-61 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/7a/648556b0a18e6582164e7336139100
+2022-03-03 05:50:46,732 INFO    Thread-63 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/83/fa52ea9a2126830b3375f8993ea624
+2022-03-03 05:50:46,736 INFO    Thread-64 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/86/d698e3d4f168f93900243fcef164e8
+2022-03-03 05:50:46,738 INFO    Thread-57 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/44/e8498bf32bdfc3a269cacd122bd3eb
+2022-03-03 05:50:46,739 INFO    Thread-78 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e9/db50cd579b9269b21613b466c07e64
+2022-03-03 05:50:46,744 INFO    Thread-56 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/42/10cfd7af4bba785978be5e5a413ff2
+2022-03-03 05:50:46,748 INFO    Thread-59 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/66/4d8d09026d758facca040b85d35732
+2022-03-03 05:50:46,750 INFO    Thread-62 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/7a/b8f338906a695006a714d53fd95e80
+2022-03-03 05:50:46,753 INFO    Thread-54 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/30/83e95e26c6c8f7b9aa2fd4bcc5a96c
+2022-03-03 05:50:46,761 INFO    Thread-51 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/19/4d3dbf562909b27f2bc505c647d53a
+2022-03-03 05:50:46,766 INFO    Thread-50 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/10/ac356cfdddf45008c69d02020c0ca7
+2022-03-03 05:50:46,773 INFO    Thread-70 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/9b/eb04ea970f378f4703ee534b952f62
+2022-03-03 05:50:46,774 INFO    Thread-65 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/89/97b82f519fe2ebb0dd4e3b7d41275f
+2022-03-03 05:50:46,776 INFO    Thread-52 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/19/c03cac682f7ace017335c913b35e95
+2022-03-03 05:50:46,780 INFO    Thread-67 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/8e/c1df7e46afc128360f9ea13bcab9d1
+2022-03-03 05:50:46,807 INFO    Thread-72 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/b6/78bdf902aea1d997df331e1afc2b0f
+2022-03-03 05:50:46,809 INFO    Thread-69 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/98/7c3501befc3c32c09441bd1411c23c
+2022-03-03 05:50:46,835 INFO    Thread-60 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/71/74f259bda8cb22817883a7b93101c4
+2022-03-03 05:50:47,155 INFO    Thread-68 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/8f/497d65680a4ac21a5f65284cc95ade
+2022-03-03 05:50:47,159 INFO    Thread-80 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ed/df30fa0e4bfd541e4e5c6e65114291
+2022-03-03 05:50:47,234 INFO    Thread-66 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/8a/32492a89b0b085f0eb9940664403a5
+2022-03-03 05:50:47,293 INFO    Thread-71 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/b0/8bb790244a92f2c06010b8c67e3946
+2022-03-03 05:50:48,420 INFO    SenderThread:7336 [sender.py:send_request_log_artifact():976] logged artifact run-2o34ygj7-Train_Sample_table - {'id': 'QXJ0aWZhY3Q6OTQwNjMwODY=', 'digest': '41d03e1093d65c75e8483d2a26cae850', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0OTg1NTU0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTQwNTU2MTc=', 'versionIndex': 0}}, 'version': 'latest'}
+2022-03-03 05:50:48,421 DEBUG   SenderThread:7336 [sender.py:send():235] send: files
+2022-03-03 05:50:48,421 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file media/table/Train_Sample_table_2_76efea366ec641734b67.table.json with policy now
+2022-03-03 05:50:48,421 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:50:48,617 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:50:49,088 INFO    Thread-81 :7336 [upload_job.py:push():137] Uploaded file /tmp/tmp1l8j45_gwandb/12sfgdla-media/table/Train_Sample_table_2_76efea366ec641734b67.table.json
+2022-03-03 05:51:03,618 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:51:03,618 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:51:12,459 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:51:16,402 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:51:18,804 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:51:18,805 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:51:33,999 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:51:34,000 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:51:46,547 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:51:48,478 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:51:49,180 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:51:49,180 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:52:04,400 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:52:04,401 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:52:16,686 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:52:19,613 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:52:19,613 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:52:20,494 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:52:34,817 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:52:34,818 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:52:46,826 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:52:50,038 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:52:50,038 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:52:56,511 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:53:05,221 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:53:05,221 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:53:16,967 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:53:20,410 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:53:20,410 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:53:30,528 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:53:35,602 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:53:35,603 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:53:47,101 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:53:50,790 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:53:50,790 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:54:05,976 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:54:05,976 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:54:06,544 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:54:17,234 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:54:21,167 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:54:21,168 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:54:36,355 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:54:36,355 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:54:40,560 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:54:47,374 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:54:51,550 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:54:51,550 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:55:06,744 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:55:06,744 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:55:16,576 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:55:17,516 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:55:21,930 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:55:21,930 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:55:37,112 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:55:37,113 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:55:47,660 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:55:52,299 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:55:52,299 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:55:52,595 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:56:07,508 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:56:07,509 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:56:17,802 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:56:22,703 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:56:22,704 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:56:26,612 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:56:37,900 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:56:37,900 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:56:47,936 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:56:53,088 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:56:53,088 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:57:02,630 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:57:08,284 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:57:08,284 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:57:18,071 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:57:23,469 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:57:23,469 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:57:38,647 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:57:38,662 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:57:38,663 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:57:48,226 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:57:53,858 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:57:53,859 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:58:09,068 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:58:09,068 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:58:14,664 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:58:18,369 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:58:24,258 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:58:24,258 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:58:39,444 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:58:39,444 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:58:48,518 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:58:48,688 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:58:54,660 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:58:54,660 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:59:09,863 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:59:09,863 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:59:18,656 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:59:22,705 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 05:59:25,064 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:59:25,064 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:59:40,259 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:59:40,260 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:59:48,793 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 05:59:55,446 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 05:59:55,446 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 05:59:58,721 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:00:10,639 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:00:10,639 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:00:18,939 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:00:25,835 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:00:25,836 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:00:34,738 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:00:41,034 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:00:41,034 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:00:49,074 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:00:56,237 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:00:56,237 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:01:10,755 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:01:11,434 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:01:11,434 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:01:19,223 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:01:26,620 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:01:26,621 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:01:41,817 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:01:41,817 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:01:44,771 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:01:49,358 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:01:57,037 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:01:57,037 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:02:12,224 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:02:12,224 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:02:18,786 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:02:19,495 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:02:27,413 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:02:27,413 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:02:40,796 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:02:42,613 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:02:42,613 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:02:49,633 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:02:57,805 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:02:57,806 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:03:12,998 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:03:12,999 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:03:19,768 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:03:28,188 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:03:28,188 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:03:43,373 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:03:43,374 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:03:49,903 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:03:58,599 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:03:58,599 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:04:13,787 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:04:13,787 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:04:20,041 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:04:28,974 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:04:28,975 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:04:32,851 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:04:33,135 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:04:33,136 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:04:33,137 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:04:33,138 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:04:33,138 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:04:33,139 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:04:33,139 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:04:33,139 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:04:33,852 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 06:04:34,852 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:04:44,184 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:04:44,184 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:04:44,248 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-03 06:04:44,375 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: log_artifact
+2022-03-03 06:04:44,624 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:04:44,857 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_4_074a56660f980da1ec8e.table.json
+2022-03-03 06:04:44,857 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table
+2022-03-03 06:04:46,002 INFO    Thread-97 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/55/7f3d74127926c61a722899a99092e7
+2022-03-03 06:04:46,004 INFO    Thread-91 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/23/447489a8bb7af4b0b95aea438766f8
+2022-03-03 06:04:46,007 INFO    Thread-96 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/40/8cf599ad707ea5fa9a6ba6aa52d100
+2022-03-03 06:04:46,012 INFO    Thread-112:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/d4/667b013418afba27b94767cfd60855
+2022-03-03 06:04:46,018 INFO    Thread-94 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/34/199b1cd86bcf6748dc471b03978d0b
+2022-03-03 06:04:46,020 INFO    Thread-111:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ce/5a06fd91a6e8ca3de3ead2eb76abdf
+2022-03-03 06:04:46,026 INFO    Thread-100:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/5b/6ec47301eecc9592f8775b9c57e79d
+2022-03-03 06:04:46,034 INFO    Thread-83 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/33/b9c1ed1a31dfd7401484e4e9a363f0
+2022-03-03 06:04:46,036 INFO    Thread-102:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/6d/83ec37df6a309eb9be7e39321456ca
+2022-03-03 06:04:46,039 INFO    Thread-108:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c6/ecfee6df452423e69b030f041882f6
+2022-03-03 06:04:46,051 INFO    Thread-113:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e3/516216f3ad07799a89895edec1eea3
+2022-03-03 06:04:46,053 INFO    Thread-95 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/38/cc9377aa035d5adb99872119fea813
+2022-03-03 06:04:46,055 INFO    Thread-86 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/17/94ba3f80ea7d9e8999d8a9271740f4
+2022-03-03 06:04:46,060 INFO    Thread-104:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/92/65ded2ba2dc99e473e7f8427f33ccb
+2022-03-03 06:04:46,063 INFO    Thread-106:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/9d/890122b65ac8dd4c9c408056517580
+2022-03-03 06:04:46,064 INFO    Thread-89 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/20/7a928e53e5ae120963792fccceedae
+2022-03-03 06:04:46,066 INFO    Thread-90 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/20/c17d491a21e43261363e57f62a26ac
+2022-03-03 06:04:46,067 INFO    Thread-107:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/a6/19696b21b3882b0de4e0d63e3aa82e
+2022-03-03 06:04:46,071 INFO    Thread-105:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/93/2fc53e9f544f0e5563ea3fb845cdc6
+2022-03-03 06:04:46,073 INFO    Thread-93 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/31/72857667704fa66dcedf652fd13dd2
+2022-03-03 06:04:46,075 INFO    Thread-87 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/1b/569e4901dde3c53a25b520882cb596
+2022-03-03 06:04:46,078 INFO    Thread-85 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/14/f7555e97d74ecb55daa9ef83d736d0
+2022-03-03 06:04:46,079 INFO    Thread-101:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/5e/851ff6a0fce3c2c97aed0dde5ae961
+2022-03-03 06:04:46,081 INFO    Thread-114:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ea/5a98eb4474ead974733494ab0de9d6
+2022-03-03 06:04:46,082 INFO    Thread-92 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/29/f532ce59cb318d5bb7e3964caaedab
+2022-03-03 06:04:46,090 INFO    Thread-84 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/0a/ad6025fd652fa2898eddab1e098d97
+2022-03-03 06:04:46,096 INFO    Thread-103:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/7f/6bc5497fee7bf80296ddb020a6e051
+2022-03-03 06:04:46,103 INFO    Thread-109:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c7/24be5e2e7fef7eead8368a177b9128
+2022-03-03 06:04:46,110 INFO    Thread-115:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/f5/51f835498e452d829dd15635ed2fea
+2022-03-03 06:04:46,119 INFO    Thread-99 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/56/e98fb4abc03deda027455b384b2f39
+2022-03-03 06:04:46,131 INFO    Thread-88 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/1b/f8fe98a29797a865a14c5cbfc90edd
+2022-03-03 06:04:46,140 INFO    Thread-98 :7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/55/c079c0f277803228b1886b3a147c9b
+2022-03-03 06:04:46,160 INFO    Thread-110:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c8/0632d82a49530006886372c5de51b4
+2022-03-03 06:04:47,128 INFO    SenderThread:7336 [sender.py:send_request_log_artifact():976] logged artifact run-2o34ygj7-Train_Sample_table - {'id': 'QXJ0aWZhY3Q6OTQwNzA1NjI=', 'digest': '5ddbaeaeb7987722ac19b1063b9c5d84', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0OTg1NTU0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTQwNjMwODY=', 'versionIndex': 1}}, 'version': 'latest'}
+2022-03-03 06:04:47,128 DEBUG   SenderThread:7336 [sender.py:send():235] send: files
+2022-03-03 06:04:47,128 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file media/table/Train_Sample_table_4_074a56660f980da1ec8e.table.json with policy now
+2022-03-03 06:04:47,897 INFO    Thread-116:7336 [upload_job.py:push():137] Uploaded file /tmp/tmp1l8j45_gwandb/31u0zz61-media/table/Train_Sample_table_4_074a56660f980da1ec8e.table.json
+2022-03-03 06:04:50,201 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:04:59,377 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:04:59,377 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:05:14,564 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:05:14,565 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:05:14,872 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:05:20,345 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:05:29,763 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:05:29,763 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:05:44,953 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:05:44,953 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:05:48,888 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:05:50,477 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:06:00,156 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:06:00,156 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:06:15,359 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:06:15,359 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:06:20,611 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:06:22,904 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:06:30,548 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:06:30,548 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:06:45,737 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:06:45,737 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:06:50,747 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:06:58,921 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:07:00,924 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:07:00,924 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:07:16,111 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:07:16,111 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:07:20,881 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:07:31,294 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:07:31,295 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:07:32,937 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:07:46,480 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:07:46,480 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:07:51,023 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:08:01,679 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:08:01,679 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:08:06,953 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:08:16,876 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:08:16,876 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:08:21,162 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:08:32,084 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:08:32,084 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:08:40,969 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:08:47,271 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:08:47,271 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:08:51,311 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:09:02,470 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:09:02,470 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:09:16,986 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:09:17,669 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:09:17,669 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:09:21,452 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:09:32,859 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:09:32,859 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:09:48,086 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:09:48,086 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:09:51,003 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:09:51,587 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:10:03,286 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:10:03,287 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:10:18,492 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:10:18,492 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:10:21,725 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:10:25,020 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:10:33,713 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:10:33,714 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:10:48,914 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:10:48,914 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:10:51,858 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:11:01,037 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:11:04,113 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:11:04,113 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:11:19,313 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:11:19,313 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:11:21,994 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:11:33,052 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:11:34,520 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:11:34,521 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:11:49,711 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:11:49,712 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:11:52,130 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:12:04,905 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:12:04,905 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:12:09,071 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:12:20,098 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:12:20,099 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:12:22,269 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:12:35,292 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:12:35,293 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:12:43,087 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:12:50,557 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:12:50,557 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:12:52,403 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:13:05,757 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:13:05,757 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:13:17,103 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:13:20,944 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:13:20,945 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:13:22,542 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:13:36,135 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:13:36,136 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:13:51,119 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:13:51,327 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:13:51,327 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:13:52,685 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:14:06,513 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:14:06,513 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:14:21,725 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:14:21,725 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:14:22,819 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:14:25,134 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:14:36,921 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:14:36,921 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:14:52,106 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:14:52,107 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:14:52,953 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:15:01,151 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:15:07,295 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:15:07,296 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:15:22,488 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:15:22,489 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:15:23,088 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:15:37,689 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:15:37,689 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:15:38,168 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:15:52,876 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:15:52,876 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:15:53,226 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:16:08,064 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:16:08,064 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:16:12,190 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:16:23,254 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:16:23,254 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:16:23,433 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:16:32,199 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:16:38,438 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:16:38,438 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:16:53,493 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:16:53,628 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:16:53,629 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:17:08,813 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:17:08,814 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:17:23,632 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:17:24,072 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:17:24,073 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:17:39,295 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:17:39,296 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:17:53,767 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:17:54,486 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:17:54,487 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:18:09,678 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:18:09,678 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:18:23,912 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:18:24,866 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:18:24,866 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:18:25,140 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:18:25,141 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:18:25,142 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:18:25,142 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:18:25,144 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:18:25,145 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:18:25,145 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:18:25,146 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:18:25,253 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 06:18:26,254 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:18:28,255 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:18:39,402 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-03 06:18:39,403 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: log_artifact
+2022-03-03 06:18:40,061 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:18:40,133 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:18:40,261 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_6_eab8730cd8fc5495c305.table.json
+2022-03-03 06:18:40,262 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table
+2022-03-03 06:18:41,956 INFO    Thread-125:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/34/60fde01a40bddf1fb9009f668049c7
+2022-03-03 06:18:41,982 INFO    Thread-126:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/47/17fe63cf90625c3132009a8a22311b
+2022-03-03 06:18:42,005 INFO    Thread-134:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/89/a9edf6d7988672624e630512075249
+2022-03-03 06:18:42,007 INFO    Thread-148:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e8/09fe01416aa9258aec3bfcacd3df09
+2022-03-03 06:18:42,014 INFO    Thread-121:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/1a/a2baa52f4798f8726e47f427779886
+2022-03-03 06:18:42,027 INFO    Thread-137:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/9f/389d275688e3d24b0b1bfe6acfb4f0
+2022-03-03 06:18:42,031 INFO    Thread-129:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/6c/ef142c78f096acc3d152cd9e3b23ae
+2022-03-03 06:18:42,032 INFO    Thread-145:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e3/6391fb51f035b9002f8f3c2ad86115
+2022-03-03 06:18:42,036 INFO    Thread-131:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/78/69e11d077d41a145c770fb4eef28b5
+2022-03-03 06:18:42,040 INFO    Thread-136:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/9e/bcc915fcce1740be9370f451e6b143
+2022-03-03 06:18:42,038 INFO    Thread-120:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/16/2b718226d889857c326552cd2990eb
+2022-03-03 06:18:42,048 INFO    Thread-133:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/81/97fd56325a41b9c970500ecf526306
+2022-03-03 06:18:42,049 INFO    Thread-149:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/f3/476b285d8684197d09cf7af28db334
+2022-03-03 06:18:42,052 INFO    Thread-135:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/8e/e0339e54744ce2ff1f451f814350b7
+2022-03-03 06:18:42,055 INFO    Thread-147:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e7/8bcf376353711a51cabb16eccc9806
+2022-03-03 06:18:42,056 INFO    Thread-127:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/4c/4779d23e0e82daeeabf7c2b7cb523d
+2022-03-03 06:18:42,060 INFO    Thread-138:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/a7/2e83bd6d9647d4262f43d5f1e1c1c3
+2022-03-03 06:18:42,061 INFO    Thread-128:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/61/f95733296cd41c22d115401f88a57f
+2022-03-03 06:18:42,061 INFO    Thread-132:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/79/efefc1e0adc89e00109c017f54a1c3
+2022-03-03 06:18:42,065 INFO    Thread-144:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e1/7a09874c665cbb5aa8f6494bdf835f
+2022-03-03 06:18:42,066 INFO    Thread-122:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/20/28bc3497e5b58c670c17b426dc47d2
+2022-03-03 06:18:42,068 INFO    Thread-119:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/09/9b4de7270d72457773b06b6c37c2fe
+2022-03-03 06:18:42,070 INFO    Thread-150:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/f4/d36acc5f1043171a3a1629107a7fbb
+2022-03-03 06:18:42,080 INFO    Thread-118:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/b1/f585744b5701ba2413da26f345a335
+2022-03-03 06:18:42,288 INFO    Thread-130:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/6d/d054d6fd952b2f396177659660a540
+2022-03-03 06:18:42,290 INFO    Thread-139:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/b2/2baf4d32105f1a5c5499b4bb6cb929
+2022-03-03 06:18:42,295 INFO    Thread-140:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c5/25266179c6b5f76e6aa07799a38535
+2022-03-03 06:18:42,304 INFO    Thread-141:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c5/33e43f87df73911f49744a92adc292
+2022-03-03 06:18:42,306 INFO    Thread-146:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e4/5ef34124bbf5d059ba5fa762459db8
+2022-03-03 06:18:42,314 INFO    Thread-123:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/2e/42b4af3c19b21a91a6d7e1db04e515
+2022-03-03 06:18:42,316 INFO    Thread-142:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/cf/1b1495be0d78edf7af42c89c227c8f
+2022-03-03 06:18:42,449 INFO    Thread-124:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/2e/93a6a1175b2b3017f28a219544102d
+2022-03-03 06:18:42,632 INFO    Thread-143:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/db/bca2a852f6c748c84144ff22e07744
+2022-03-03 06:18:43,632 INFO    SenderThread:7336 [sender.py:send_request_log_artifact():976] logged artifact run-2o34ygj7-Train_Sample_table - {'id': 'QXJ0aWZhY3Q6OTQwNzc5MjI=', 'digest': '2c7d278136cd68d4dd09eed6c55df2d0', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0OTg1NTU0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTQwNzA1NjI=', 'versionIndex': 2}}, 'version': 'latest'}
+2022-03-03 06:18:43,632 DEBUG   SenderThread:7336 [sender.py:send():235] send: files
+2022-03-03 06:18:43,632 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file media/table/Train_Sample_table_6_eab8730cd8fc5495c305.table.json with policy now
+2022-03-03 06:18:43,633 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:18:44,221 INFO    Thread-151:7336 [upload_job.py:push():137] Uploaded file /tmp/tmp1l8j45_gwandb/3u7s539e-media/table/Train_Sample_table_6_eab8730cd8fc5495c305.table.json
+2022-03-03 06:18:54,081 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:18:58,845 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:18:58,846 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:19:08,275 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:19:14,029 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:19:14,029 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:19:24,221 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:19:29,217 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:19:29,218 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:19:44,294 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:19:44,411 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:19:44,411 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:19:54,361 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:19:59,606 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:19:59,606 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:20:14,791 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:20:14,791 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:20:20,312 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:20:24,497 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:20:29,989 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:20:29,990 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:20:45,179 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:20:45,179 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:20:54,631 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:20:56,330 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:21:00,374 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:21:00,375 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:21:15,561 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:21:15,561 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:21:24,763 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:21:30,756 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:21:30,757 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:21:32,348 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:21:45,937 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:21:45,938 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:21:54,898 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:22:01,123 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:22:01,124 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:22:06,364 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:22:16,330 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:22:16,330 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:22:25,032 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:22:31,589 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:22:31,590 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:22:42,381 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:22:46,787 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:22:46,787 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:22:55,172 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:23:01,990 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:23:01,990 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:23:16,399 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:23:17,173 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:23:17,174 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:23:25,309 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:23:32,395 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:23:32,395 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:23:47,596 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:23:47,596 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:23:50,415 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:23:55,450 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:24:02,782 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:24:02,782 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:24:18,011 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:24:18,012 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:24:25,580 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:24:26,433 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:24:33,276 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:24:33,276 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:24:48,479 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:24:48,479 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:24:55,722 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:25:00,449 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:25:03,669 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:25:03,669 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:25:18,931 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:25:18,931 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:25:25,868 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:25:34,125 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:25:34,125 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:25:36,468 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:25:49,315 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:25:49,315 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:25:56,011 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:26:04,510 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:26:04,510 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:26:08,484 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:26:19,721 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:26:19,721 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:26:26,149 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:26:34,972 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:26:34,972 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:26:42,501 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:26:50,161 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:26:50,161 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:26:56,286 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:27:05,353 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:27:05,353 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:27:18,518 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:27:20,608 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:27:20,608 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:27:26,416 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:27:35,807 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:27:35,807 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:27:51,036 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:27:51,036 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:27:52,536 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:27:56,556 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:28:06,235 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:28:06,235 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:28:21,429 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:28:21,430 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:28:26,553 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:28:26,697 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:28:36,635 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:28:36,635 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:28:51,823 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:28:51,824 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:28:56,838 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:29:00,570 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:29:07,031 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:29:07,031 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:29:22,239 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:29:22,240 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:29:26,985 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:29:34,588 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:29:37,433 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:29:37,433 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:29:52,621 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:29:52,622 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:29:57,130 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:30:07,810 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:30:07,810 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:30:08,605 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:30:22,998 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:30:22,999 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:30:27,272 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:30:30,617 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:30:38,189 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:30:38,190 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:30:53,382 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:30:53,383 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:30:57,407 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:31:08,567 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:31:08,568 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:31:23,755 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:31:23,756 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:31:27,542 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:31:38,945 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:31:38,946 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:31:54,131 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:31:54,132 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:31:57,684 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:32:09,339 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:32:09,339 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:32:20,333 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:32:20,334 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:32:20,336 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:32:20,336 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:32:20,336 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:32:20,337 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:32:20,337 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:32:20,337 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:32:20,669 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 06:32:22,670 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:32:24,555 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:32:24,555 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:32:27,816 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:32:31,690 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-03 06:32:31,691 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: log_artifact
+2022-03-03 06:32:32,095 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:32:32,675 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_8_56a04289069a1e89e73c.table.json
+2022-03-03 06:32:32,676 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table
+2022-03-03 06:32:33,568 INFO    Thread-153:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/f5/266b30522d41af6e9dcd542b562ee7
+2022-03-03 06:32:33,680 INFO    Thread-157:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/21/333820fbf38d6728431c74c7c40ef1
+2022-03-03 06:32:33,713 INFO    Thread-164:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/40/ae3cc3348de4181e8ffcf08b26affc
+2022-03-03 06:32:33,723 INFO    Thread-171:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/96/95ec856de6f58bfce974c91064e7da
+2022-03-03 06:32:33,732 INFO    Thread-176:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c3/b7b8a5f2502c55047b0a5cf5c0c57f
+2022-03-03 06:32:33,746 INFO    Thread-174:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/bf/ead2692b1b9cdde0341efb517f8e25
+2022-03-03 06:32:33,751 INFO    Thread-159:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/29/f8275a16ca1731354d2386dad2e68d
+2022-03-03 06:32:33,760 INFO    Thread-177:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c3/bf3f915d6c69fbe1d88d4bc1a8aaa3
+2022-03-03 06:32:33,766 INFO    Thread-154:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/04/5dc1d6dbd4eb7282b345a9834c2dbb
+2022-03-03 06:32:33,778 INFO    Thread-163:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/3b/c07eb29e6f3932cd97bd77b8a187d8
+2022-03-03 06:32:33,842 INFO    Thread-178:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c5/83bc7c7d2c3362fb5143a3260b122b
+2022-03-03 06:32:33,890 INFO    Thread-165:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/41/f959f3022c68b47f7d6e3b4114e7fd
+2022-03-03 06:32:33,911 INFO    Thread-168:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/5f/466fd6e31f07e76fe5401974944d9b
+2022-03-03 06:32:33,924 INFO    Thread-155:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/0b/bae1d11b09261acf30c83ce13bc75f
+2022-03-03 06:32:33,925 INFO    Thread-166:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/50/7c33c40f3dec57e2f5e54a564ffb3d
+2022-03-03 06:32:33,926 INFO    Thread-169:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/83/fc8af9f227014eb2621b6d032279e6
+2022-03-03 06:32:33,937 INFO    Thread-173:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/be/cf7e92fe1b434e27ffcb107edfb698
+2022-03-03 06:32:33,946 INFO    Thread-158:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/27/8785c6ecd11c207b2b3e0e7cc0eb86
+2022-03-03 06:32:33,955 INFO    Thread-156:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/0c/fecc600aa4c9b78c97af93460a4023
+2022-03-03 06:32:33,957 INFO    Thread-175:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c1/9908aef921559c276d27c1d27155f7
+2022-03-03 06:32:33,968 INFO    Thread-170:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/94/d857dbafbc9031f7ef7fb233d76497
+2022-03-03 06:32:34,038 INFO    Thread-179:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c9/daa11857fb47b729bda8d15848ddfd
+2022-03-03 06:32:34,081 INFO    Thread-183:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e9/da7bc46663f2548024f4378be3d66d
+2022-03-03 06:32:34,106 INFO    Thread-182:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e8/b7a36629dc83b0c46e073f982f9e69
+2022-03-03 06:32:34,275 INFO    Thread-184:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/f3/9e59241366dced989e139723d9ee2e
+2022-03-03 06:32:34,288 INFO    Thread-180:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/d2/b8e7e681611d3eb1358889db7b599a
+2022-03-03 06:32:34,290 INFO    Thread-185:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/fd/0364b7fe433caad6b61d7d95f99293
+2022-03-03 06:32:34,301 INFO    Thread-162:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/39/5e541aaacb9efc4d1e7b59bb906dd1
+2022-03-03 06:32:34,322 INFO    Thread-181:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e0/5462d502ccd401543748cd2919c356
+2022-03-03 06:32:34,323 INFO    Thread-160:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/2e/bead1f7d5c5913d80b0bd09090e8a5
+2022-03-03 06:32:34,350 INFO    Thread-172:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/97/f159f92606f4b2ef9e7d6e9a9f793f
+2022-03-03 06:32:34,367 INFO    Thread-167:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/59/6f7b01c81b7bae068c5ba36bf5dfae
+2022-03-03 06:32:34,402 INFO    Thread-161:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/33/fd1e0a867718d1a69cbd699e24e38f
+2022-03-03 06:32:35,481 INFO    SenderThread:7336 [sender.py:send_request_log_artifact():976] logged artifact run-2o34ygj7-Train_Sample_table - {'id': 'QXJ0aWZhY3Q6OTQwODU1ODQ=', 'digest': '265eae03464e719eb6aa76b3e34d1231', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0OTg1NTU0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTQwNzc5MjI=', 'versionIndex': 3}}, 'version': 'latest'}
+2022-03-03 06:32:35,481 DEBUG   SenderThread:7336 [sender.py:send():235] send: files
+2022-03-03 06:32:35,481 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file media/table/Train_Sample_table_8_56a04289069a1e89e73c.table.json with policy now
+2022-03-03 06:32:36,147 INFO    Thread-186:7336 [upload_job.py:push():137] Uploaded file /tmp/tmp1l8j45_gwandb/2r55ygr3-media/table/Train_Sample_table_8_56a04289069a1e89e73c.table.json
+2022-03-03 06:32:39,739 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:32:39,739 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:32:54,934 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:32:54,934 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:32:58,002 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:33:00,694 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:33:10,126 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:33:10,126 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:33:25,326 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:33:25,326 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:33:28,132 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:33:36,716 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:33:40,520 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:33:40,520 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:33:55,717 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:33:55,717 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:33:58,269 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:34:10,734 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:34:10,911 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:34:10,912 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:34:26,105 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:34:26,105 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:34:28,407 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:34:41,293 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:34:41,293 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:34:44,752 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:34:56,492 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:34:56,492 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:34:58,546 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:35:11,679 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:35:11,680 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:35:20,769 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:35:26,867 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:35:26,867 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:35:28,681 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:35:42,057 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:35:42,057 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:35:54,786 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:35:57,242 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:35:57,243 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:35:58,814 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:36:12,448 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:36:12,449 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:36:27,676 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:36:27,676 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:36:28,955 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:36:30,804 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:36:42,862 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:36:42,862 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:36:58,048 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:36:58,048 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:36:59,094 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:37:04,822 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:37:13,238 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:37:13,239 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:37:28,429 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:37:28,430 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:37:29,233 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:37:38,839 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:37:43,637 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:37:43,637 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:37:58,840 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:37:58,841 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:37:59,365 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:38:14,031 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:38:14,032 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:38:14,857 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:38:29,215 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:38:29,215 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:38:29,518 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:38:44,413 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:38:44,413 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:38:50,877 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:38:59,617 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:38:59,618 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:38:59,800 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:39:14,801 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:39:14,802 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:39:24,895 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:39:29,805 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:39:29,992 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:39:29,993 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:39:45,180 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:39:45,180 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:39:58,912 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:39:59,941 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:40:00,398 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:40:00,398 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:40:15,596 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:40:15,597 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:40:30,079 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:40:30,868 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:40:30,869 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:40:34,930 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:40:46,074 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:40:46,074 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:41:00,211 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:41:01,271 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:41:01,272 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:41:10,948 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:41:16,541 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:41:16,541 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:41:30,346 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:41:31,756 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:41:31,756 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:41:46,946 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:41:46,946 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:41:46,966 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:42:00,500 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:42:02,134 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:42:02,134 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:42:17,315 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:42:17,315 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:42:20,983 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:42:30,656 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:42:32,522 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:42:32,523 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:42:47,706 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:42:47,706 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:42:58,001 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:43:00,791 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:43:02,890 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:43:02,891 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:43:18,077 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:43:18,077 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:43:30,928 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:43:33,262 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:43:33,263 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:43:34,019 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:43:48,463 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:43:48,464 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:44:01,065 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:44:03,647 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:44:03,647 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:44:08,036 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:44:18,831 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:44:18,832 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:44:30,047 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:44:31,198 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:44:34,020 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:44:34,021 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:44:49,213 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:44:49,213 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:45:01,331 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:45:04,402 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:45:04,403 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:45:19,618 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:45:19,619 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:45:31,480 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:45:34,855 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:45:34,855 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:45:50,178 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:45:50,178 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:46:01,610 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:46:05,365 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:46:05,365 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:46:19,647 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:46:19,649 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:46:19,649 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:46:19,650 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:46:20,101 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 06:46:20,278 DEBUG   SenderThread:7336 [sender.py:send():235] send: files
+2022-03-03 06:46:20,278 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:46:20,278 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file media/images/Plot/3Classification_9_fba7a831d6a276025568.png with policy now
+2022-03-03 06:46:20,280 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:46:20,280 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:46:20,281 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:46:21,030 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-03 06:46:21,031 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: stop_status
+2022-03-03 06:46:21,044 INFO    Thread-187:7336 [upload_job.py:push():137] Uploaded file /tmp/tmp1l8j45_gwandb/hlqavltf-media/images/Plot/3Classification_9_fba7a831d6a276025568.png
+2022-03-03 06:46:21,102 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 06:46:21,102 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/images/Plot/3Classification_9_fba7a831d6a276025568.png
+2022-03-03 06:46:21,102 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media
+2022-03-03 06:46:21,102 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/images
+2022-03-03 06:46:21,102 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/images/Plot
+2022-03-03 06:46:21,304 DEBUG   SenderThread:7336 [sender.py:send():235] send: files
+2022-03-03 06:46:21,305 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file media/images/Plot/MultiClassification_10_fd6459cd4a79e0454c81.png with policy now
+2022-03-03 06:46:21,305 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:46:21,328 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:46:21,332 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:46:21,332 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:46:22,061 INFO    Thread-188:7336 [upload_job.py:push():137] Uploaded file /tmp/tmp1l8j45_gwandb/1xwevfzs-media/images/Plot/MultiClassification_10_fd6459cd4a79e0454c81.png
+2022-03-03 06:46:22,102 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 06:46:22,103 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:46:22,103 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/images/Plot/MultiClassification_10_fd6459cd4a79e0454c81.png
+2022-03-03 06:46:22,103 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/images/Plot
+2022-03-03 06:46:30,627 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: log_artifact
+2022-03-03 06:46:30,627 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: log_artifact
+2022-03-03 06:46:31,021 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:46:31,023 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-03 06:46:31,108 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Miss_Label_table_11_dae7f7230635af2e9f5f.table.json
+2022-03-03 06:46:31,108 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table
+2022-03-03 06:46:32,429 INFO    Thread-190:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/49/9b74defbb9555319de21bfc59e05f6
+2022-03-03 06:46:32,458 INFO    Thread-224:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/51/e4c60ced5293fb84b67f262435649f
+2022-03-03 06:46:32,460 INFO    Thread-204:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/1f/468d5c3a4590f14ad6ee9f490bd240
+2022-03-03 06:46:32,476 INFO    Thread-216:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/3e/08680c3c00e6d03e5e356c88413ea7
+2022-03-03 06:46:32,479 INFO    Thread-203:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/1c/49faf92e6c2eabe8ca7fa7a3a5a960
+2022-03-03 06:46:32,491 INFO    Thread-221:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/4d/218b41caca46671a9400d40b30b414
+2022-03-03 06:46:32,496 INFO    Thread-220:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/4b/45dfb8275abe871ff7c0052c183a90
+2022-03-03 06:46:32,518 INFO    Thread-251:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c5/3d1db7c00b704b49d036237c3099ce
+2022-03-03 06:46:32,520 INFO    Thread-215:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/3b/8013efe929925eb8738016f59ea495
+2022-03-03 06:46:32,531 INFO    Thread-192:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/01/41ed87a23e570f70fccd7a0a64c680
+2022-03-03 06:46:32,534 INFO    Thread-250:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c3/a48957b8d61893715b1b631e549f31
+2022-03-03 06:46:32,537 INFO    Thread-210:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/2a/c2390501dfcada66ce32a62ddc7b86
+2022-03-03 06:46:32,540 INFO    Thread-213:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/34/eb857243bdf5df77a970a3136c3aa4
+2022-03-03 06:46:32,554 INFO    Thread-208:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/26/8f8e18bf30e9a688b83957c15d3856
+2022-03-03 06:46:32,563 INFO    Thread-196:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/09/bf7500ba1dce90442333eb35b38ae9
+2022-03-03 06:46:32,565 INFO    Thread-219:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/49/a506dc95e202e843091f550e929485
+2022-03-03 06:46:32,577 INFO    Thread-233:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/78/7b7332e476ce5755f918455375eda5
+2022-03-03 06:46:32,578 INFO    Thread-206:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/21/2295cfcb7d9e27e343d07b31045910
+2022-03-03 06:46:32,588 INFO    Thread-229:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/64/9679760deeee6b44b843a2a3041c10
+2022-03-03 06:46:32,590 INFO    Thread-241:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/9e/bbe4f86a2b8f840bff6be4d992cec7
+2022-03-03 06:46:32,609 INFO    Thread-239:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/8f/be4de14e21f220b8f1f3a947be9c1a
+2022-03-03 06:46:32,640 INFO    Thread-232:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/78/738055ba00e8d273a663f270b932cf
+2022-03-03 06:46:32,641 INFO    Thread-223:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/50/ffd840a576dde77b56b034ac3df16f
+2022-03-03 06:46:32,644 INFO    Thread-227:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/5f/412b259df9ce48e093ee8f3b352846
+2022-03-03 06:46:32,645 INFO    Thread-244:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/a5/384ad23e1740e1e7929bf4d55ef4aa
+2022-03-03 06:46:32,648 INFO    Thread-207:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/23/9a2391b1ec6cf51fe7db0c497f132d
+2022-03-03 06:46:32,650 INFO    Thread-200:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/19/63f6940e409eddb202a47d97e24a9d
+2022-03-03 06:46:32,652 INFO    Thread-214:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/37/896c9ac47be07a57afefa4dcf50e22
+2022-03-03 06:46:32,664 INFO    Thread-247:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/af/32e39c76d808247d9ae30a4bea85ce
+2022-03-03 06:46:32,679 INFO    Thread-222:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/4d/bdf7214a8be0f4f4f76ea90fd97a1a
+2022-03-03 06:46:32,680 INFO    Thread-193:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/03/b6c93c86163186c165f0a0ea8f69c9
+2022-03-03 06:46:32,697 INFO    Thread-198:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/0f/47588c8329768692ebbdf940addd55
+2022-03-03 06:46:32,698 INFO    Thread-228:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/62/4725fc6fec62eda642b0e52118f44f
+2022-03-03 06:46:32,701 INFO    Thread-195:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/09/6b0bfa4f608988a8ad8ac4f2c32fe6
+2022-03-03 06:46:32,702 INFO    Thread-199:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/17/60329f8fb92e5f81e14100904c0885
+2022-03-03 06:46:32,711 INFO    Thread-238:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/8d/1e7b2a922a35eebe132b35f4b07af2
+2022-03-03 06:46:32,713 INFO    Thread-246:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ae/bdcf46a8b34b596fb5c761560b8b21
+2022-03-03 06:46:32,726 INFO    Thread-209:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/2a/8ed8976d1022fd99f9f6f9a73492da
+2022-03-03 06:46:32,731 INFO    Thread-211:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/2b/3c900f362a959707349b62fe2d73df
+2022-03-03 06:46:32,733 INFO    Thread-212:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/2f/32888640f24251460304f577fdde4a
+2022-03-03 06:46:32,750 INFO    Thread-202:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/1a/da881609aae13285ee4b2d56dbe617
+2022-03-03 06:46:32,755 INFO    Thread-205:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/20/60f31b814cb913021ed3ed95bbd133
+2022-03-03 06:46:32,759 INFO    Thread-201:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/1a/2bad391e7fb1375a416649611b9829
+2022-03-03 06:46:32,769 INFO    Thread-217:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/3f/eeb3ab970663c6ef422d419209acd8
+2022-03-03 06:46:32,772 INFO    Thread-194:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/03/b72a9a2d42fe35dad0f383515dcb1a
+2022-03-03 06:46:32,789 INFO    Thread-191:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/00/c058f6065be7722497b76a242e3557
+2022-03-03 06:46:32,822 INFO    Thread-225:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/52/3af6e9556d976ce6b5fc411cf9982b
+2022-03-03 06:46:32,853 INFO    Thread-252:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ca/f107092b1f31c2226cae791631c0bd
+2022-03-03 06:46:32,858 INFO    Thread-236:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/88/130b086303ee38eeff79e5a6d22b0d
+2022-03-03 06:46:32,864 INFO    Thread-249:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/c2/e36ea290a42f316b52366812821fff
+2022-03-03 06:46:32,873 INFO    Thread-240:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/8f/cc99d4714288aeadfe3fefa0c03a54
+2022-03-03 06:46:32,875 INFO    Thread-230:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/74/731e8e39087d0bd5fba7c64270c867
+2022-03-03 06:46:32,877 INFO    Thread-253:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/cf/5b7aea23799c918858a3270d1169e2
+2022-03-03 06:46:32,878 INFO    Thread-242:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/a1/436995d28024de75e9ead45d1a10d9
+2022-03-03 06:46:32,881 INFO    Thread-245:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/a9/e3d1e8a3ebc0327a9d754c98d70001
+2022-03-03 06:46:32,883 INFO    Thread-235:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/85/0807984e33bed78d33370277dda7ef
+2022-03-03 06:46:32,909 INFO    Thread-248:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/bc/cebfc2cafea9ac5ecd5d5b4a86a1cc
+2022-03-03 06:46:32,931 INFO    Thread-231:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/76/b54bb9180391fd6ca3b24b8f5827d6
+2022-03-03 06:46:33,096 INFO    Thread-218:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/42/eb9ad2982af64c165346e6fc38ab6d
+2022-03-03 06:46:33,136 INFO    Thread-226:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/55/16db7f90461f750c009d0ffbe653e2
+2022-03-03 06:46:33,173 INFO    Thread-197:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/09/fb93d053dd312c4e773e929398d521
+2022-03-03 06:46:33,180 INFO    Thread-237:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/8c/cb6c9b01ae3e77dfec87867e484b12
+2022-03-03 06:46:33,203 INFO    Thread-254:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/d0/ff83e5b1172180ff734a4e852e5c7e
+2022-03-03 06:46:33,262 INFO    Thread-243:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/a1/b5cf5b2e66bda72c65c0a7ffc1f200
+2022-03-03 06:46:33,280 INFO    Thread-234:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/7c/a5b9f308137fb92899cdce4515ee65
+2022-03-03 06:46:33,479 INFO    Thread-263:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e3/1254ae6ee3d86150231debb7a43e3d
+2022-03-03 06:46:33,490 INFO    Thread-271:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/fc/835c99555f73ddfd88403758947ec9
+2022-03-03 06:46:33,511 INFO    Thread-257:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/d8/15947b42f2ebf15c9ebae8432af6ff
+2022-03-03 06:46:33,514 INFO    Thread-258:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/da/6e996ee301dba3a2045164d18f45d5
+2022-03-03 06:46:33,515 INFO    Thread-272:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/fe/5fab1121dc289b3dca082f0e68d6f5
+2022-03-03 06:46:33,517 INFO    Thread-262:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e2/fefc6b1de42c177d78e97eb2793a86
+2022-03-03 06:46:33,520 INFO    Thread-267:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ec/6a44eead2b6e8b51344ed81151b6aa
+2022-03-03 06:46:33,543 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:33,669 INFO    Thread-255:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/d6/47b850519609fbe1d9ca5cd5939771
+2022-03-03 06:46:33,680 INFO    Thread-261:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e2/12627f48316722748226c18a581b95
+2022-03-03 06:46:33,692 INFO    Thread-270:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/f9/33530ace126e4c4dea82c728bcf690
+2022-03-03 06:46:33,693 INFO    Thread-256:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/d6/806e0dc5a25927bade2572d29263a3
+2022-03-03 06:46:33,695 INFO    Thread-265:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/ea/525e3999054a52f90bdb15b1301a7a
+2022-03-03 06:46:33,698 INFO    Thread-269:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/f6/65872c49b6c1700547644efcb3afd7
+2022-03-03 06:46:33,704 INFO    Thread-259:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/dc/c5b9af2ccaa1ac5d20a591d52d4f85
+2022-03-03 06:46:33,717 INFO    Thread-264:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e8/f48cb1f821490a0d8f97be4839bb8e
+2022-03-03 06:46:33,727 INFO    Thread-260:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/e1/15c68877d58250c21bcb1183f9f04f
+2022-03-03 06:46:34,132 INFO    Thread-266:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/eb/f56a75050c9b74579a63c98a18b4f4
+2022-03-03 06:46:34,176 INFO    Thread-7  :7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:46:34,189 INFO    Thread-268:7336 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/f3/3ccd6ed98f4a2860437f598752f36c
+2022-03-03 06:46:35,271 INFO    SenderThread:7336 [sender.py:send_request_log_artifact():976] logged artifact run-2o34ygj7-Miss_Label_table - {'id': 'QXJ0aWZhY3Q6OTQwOTI0NzA=', 'digest': '8147c83bb8f6a7183f7d9589e6fa6fc7', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0OTkyMTYx', 'latestArtifact': None}, 'version': 'latest'}
+2022-03-03 06:46:35,272 DEBUG   SenderThread:7336 [sender.py:send():235] send: files
+2022-03-03 06:46:35,272 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file media/table/Miss_Label_table_11_dae7f7230635af2e9f5f.table.json with policy now
+2022-03-03 06:46:35,272 DEBUG   SenderThread:7336 [sender.py:send():235] send: telemetry
+2022-03-03 06:46:35,272 DEBUG   SenderThread:7336 [sender.py:send():235] send: telemetry
+2022-03-03 06:46:35,272 DEBUG   SenderThread:7336 [sender.py:send():235] send: history
+2022-03-03 06:46:35,272 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:46:35,273 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:46:35,274 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:46:35,274 DEBUG   SenderThread:7336 [sender.py:send():235] send: exit
+2022-03-03 06:46:35,274 INFO    SenderThread:7336 [sender.py:send_exit():371] handling exit code: 0
+2022-03-03 06:46:35,274 INFO    SenderThread:7336 [sender.py:send_exit():373] handling runtime: 4219
+2022-03-03 06:46:35,274 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:46:35,275 INFO    SenderThread:7336 [sender.py:send_exit():379] send defer
+2022-03-03 06:46:35,275 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:35,278 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:35,279 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 0
+2022-03-03 06:46:35,279 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:35,279 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-03-03 06:46:35,279 INFO    SenderThread:7336 [sender.py:transition_state():392] send defer: 1
+2022-03-03 06:46:35,279 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:35,280 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 1
+2022-03-03 06:46:35,309 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:35,309 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-03-03 06:46:35,309 INFO    SenderThread:7336 [sender.py:transition_state():392] send defer: 2
+2022-03-03 06:46:35,310 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:35,310 DEBUG   SenderThread:7336 [sender.py:send():235] send: stats
+2022-03-03 06:46:35,310 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 2
+2022-03-03 06:46:35,311 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:35,311 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-03-03 06:46:35,311 INFO    SenderThread:7336 [sender.py:transition_state():392] send defer: 3
+2022-03-03 06:46:35,311 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:35,311 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 3
+2022-03-03 06:46:35,311 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:35,311 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-03-03 06:46:35,311 INFO    SenderThread:7336 [sender.py:transition_state():392] send defer: 4
+2022-03-03 06:46:35,312 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:35,312 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 4
+2022-03-03 06:46:35,312 DEBUG   SenderThread:7336 [sender.py:send():235] send: summary
+2022-03-03 06:46:35,313 INFO    SenderThread:7336 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-03 06:46:35,313 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:35,313 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-03-03 06:46:35,313 INFO    SenderThread:7336 [sender.py:transition_state():392] send defer: 5
+2022-03-03 06:46:35,313 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:35,314 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 5
+2022-03-03 06:46:35,314 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:35,314 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-03-03 06:46:35,377 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:35,530 INFO    SenderThread:7336 [sender.py:transition_state():392] send defer: 6
+2022-03-03 06:46:35,530 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:35,530 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:35,531 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 6
+2022-03-03 06:46:35,531 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:35,531 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-03-03 06:46:35,531 INFO    SenderThread:7336 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-03 06:46:35,632 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:36,178 INFO    SenderThread:7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 06:46:36,178 INFO    SenderThread:7336 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/config.yaml
+2022-03-03 06:46:36,179 INFO    SenderThread:7336 [dir_watcher.py:finish():313] scan: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files
+2022-03-03 06:46:36,179 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/config.yaml config.yaml
+2022-03-03 06:46:36,179 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/conda-environment.yaml conda-environment.yaml
+2022-03-03 06:46:36,180 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/requirements.txt requirements.txt
+2022-03-03 06:46:36,180 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json wandb-summary.json
+2022-03-03 06:46:36,185 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-metadata.json wandb-metadata.json
+2022-03-03 06:46:36,185 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log output.log
+2022-03-03 06:46:36,194 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_2_76efea366ec641734b67.table.json media/table/Train_Sample_table_2_76efea366ec641734b67.table.json
+2022-03-03 06:46:36,194 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_8_56a04289069a1e89e73c.table.json media/table/Train_Sample_table_8_56a04289069a1e89e73c.table.json
+2022-03-03 06:46:36,194 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_6_eab8730cd8fc5495c305.table.json media/table/Train_Sample_table_6_eab8730cd8fc5495c305.table.json
+2022-03-03 06:46:36,194 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_4_074a56660f980da1ec8e.table.json media/table/Train_Sample_table_4_074a56660f980da1ec8e.table.json
+2022-03-03 06:46:36,194 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Train_Sample_table_0_57782f461dbeb346088e.table.json media/table/Train_Sample_table_0_57782f461dbeb346088e.table.json
+2022-03-03 06:46:36,194 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/table/Miss_Label_table_11_dae7f7230635af2e9f5f.table.json media/table/Miss_Label_table_11_dae7f7230635af2e9f5f.table.json
+2022-03-03 06:46:36,198 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/images/Plot/3Classification_9_fba7a831d6a276025568.png media/images/Plot/3Classification_9_fba7a831d6a276025568.png
+2022-03-03 06:46:36,198 INFO    SenderThread:7336 [dir_watcher.py:finish():327] scan save: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/media/images/Plot/MultiClassification_10_fd6459cd4a79e0454c81.png media/images/Plot/MultiClassification_10_fd6459cd4a79e0454c81.png
+2022-03-03 06:46:36,198 INFO    SenderThread:7336 [sender.py:transition_state():392] send defer: 7
+2022-03-03 06:46:36,198 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:36,206 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:36,206 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 7
+2022-03-03 06:46:36,207 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:36,207 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-03-03 06:46:36,207 INFO    SenderThread:7336 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-03 06:46:36,305 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:36,305 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:36,325 INFO    Thread-273:7336 [upload_job.py:push():137] Uploaded file /tmp/tmp1l8j45_gwandb/vyp2hw08-media/table/Miss_Label_table_11_dae7f7230635af2e9f5f.table.json
+2022-03-03 06:46:36,408 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:36,410 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:36,512 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:36,512 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:36,614 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:36,614 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:36,716 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:36,716 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:36,818 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:36,818 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:36,831 INFO    Thread-274:7336 [upload_job.py:push():137] Uploaded file /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/config.yaml
+2022-03-03 06:46:36,834 INFO    Thread-275:7336 [upload_job.py:push():137] Uploaded file /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/conda-environment.yaml
+2022-03-03 06:46:36,891 INFO    Thread-277:7336 [upload_job.py:push():137] Uploaded file /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/wandb-summary.json
+2022-03-03 06:46:36,919 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:36,919 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:37,021 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:37,021 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:37,122 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:37,123 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:37,202 INFO    Thread-276:7336 [upload_job.py:push():137] Uploaded file /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/requirements.txt
+2022-03-03 06:46:37,224 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:37,224 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:37,326 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:37,326 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:37,426 INFO    Thread-278:7336 [upload_job.py:push():137] Uploaded file /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/files/output.log
+2022-03-03 06:46:37,427 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:37,427 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:37,529 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:37,529 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:37,626 INFO    Thread-6  :7336 [sender.py:transition_state():392] send defer: 8
+2022-03-03 06:46:37,627 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:37,627 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 8
+2022-03-03 06:46:37,627 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:37,627 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-03-03 06:46:37,630 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:38,296 INFO    SenderThread:7336 [sender.py:transition_state():392] send defer: 9
+2022-03-03 06:46:38,296 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:38,297 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:38,297 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 9
+2022-03-03 06:46:38,298 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:38,298 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-03-03 06:46:38,298 INFO    SenderThread:7336 [sender.py:transition_state():392] send defer: 10
+2022-03-03 06:46:38,298 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: defer
+2022-03-03 06:46:38,298 INFO    HandlerThread:7336 [handler.py:handle_request_defer():164] handle defer: 10
+2022-03-03 06:46:38,299 DEBUG   SenderThread:7336 [sender.py:send():235] send: final
+2022-03-03 06:46:38,299 DEBUG   SenderThread:7336 [sender.py:send():235] send: footer
+2022-03-03 06:46:38,299 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: defer
+2022-03-03 06:46:38,299 INFO    SenderThread:7336 [sender.py:send_request_defer():388] handle sender defer: 10
+2022-03-03 06:46:38,398 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: poll_exit
+2022-03-03 06:46:38,398 DEBUG   SenderThread:7336 [sender.py:send_request():249] send_request: poll_exit
+2022-03-03 06:46:38,398 INFO    SenderThread:7336 [file_pusher.py:join():150] waiting for file pusher
+2022-03-03 06:46:38,689 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: sampled_history
+2022-03-03 06:46:38,690 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: get_summary
+2022-03-03 06:46:38,691 DEBUG   HandlerThread:7336 [handler.py:handle_request():141] handle_request: shutdown
+2022-03-03 06:46:38,691 INFO    HandlerThread:7336 [handler.py:finish():778] shutting down handler
+2022-03-03 06:46:39,299 INFO    WriterThread:7336 [datastore.py:close():281] close: /opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCutmix_HFlip/wandb/run-20220303_053612-2o34ygj7/run-2o34ygj7.wandb
+2022-03-03 06:46:39,587 INFO    SenderThread:7336 [sender.py:finish():1078] shutting down sender
+2022-03-03 06:46:39,588 INFO    SenderThread:7336 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-03 06:46:39,588 INFO    SenderThread:7336 [file_pusher.py:join():150] waiting for file pusher
+2022-03-03 06:46:39,589 INFO    MainThread:7336 [internal.py:handle_exit():82] Internal process exited
