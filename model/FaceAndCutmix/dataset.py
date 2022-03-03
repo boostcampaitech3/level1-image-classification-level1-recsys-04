@@ -372,7 +372,6 @@ class CutMixDataset(MaskSplitByProfileDataset):
         self.age11_labels = []
         
         self.class_idx = [[] for i in range(0, 18)]  #클래스별 index
-        
         self.istrain = []
 
         super().__init__(data_dir, mean, std, val_ratio)
@@ -409,7 +408,7 @@ class CutMixDataset(MaskSplitByProfileDataset):
                     self.age_labels.append(age_label)
 
                     self.age11_labels.append(age11_label)
-
+                    
                     multi_class = self.encode_multi_class(mask_label,gender_label,age_label)
 
                     self.class_idx[multi_class].append(cnt)
