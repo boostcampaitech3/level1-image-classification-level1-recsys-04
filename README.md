@@ -32,3 +32,11 @@ level1-image-classification-level1-recsys-04 created by GitHub Classroom
         "normal" : "_7",
     ```
 ---
+
+
+### 설치
+```
+pip install python-dotenv
+pip install efficientnet_pytorch
+pip install facenet-pytorch
+```
