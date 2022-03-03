@@ -226,7 +226,7 @@ class MaskBaseDataset(Dataset):
             _transform =  self.transform
         else :
             _transform =  BaseAugmentation()
-        return _transform(image), multi_class_label
+        return _transform(image), gender_label
 
 											   
 												 

@@ -1,7 +1,7 @@
 {
     "seed": 42,
     "epochs": 10,
-    "dataset": "CutMixDataset",
+    "dataset": "MaskSplitByProfileDataset",
     "augmentation": "CustomAugmentation",
     "resize": [
         380,
@@ -13,8 +13,8 @@
     "optimizer": "Adam",
     "lr": 0.0001,
     "val_ratio": 0.2,
-    "criterion": "label_smoothing",
-    "lr_decay_step": 10,
+    "criterion": "cross_entropy",
+    "lr_decay_step": 7,
     "log_interval": 20,
     "name": "Face_Cutmix_lab_smooth_train_gender",
     "data_dir": "/opt/ml/input/data/train/images",

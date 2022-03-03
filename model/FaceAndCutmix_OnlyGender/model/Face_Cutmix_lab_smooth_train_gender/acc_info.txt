@@ -1,0 +1,21 @@
+----------------EPOCH : 0------------------
+Gender : 0, Accuracy By Gender : 0.95%
+Gender : 1, Accuracy By Gender :  1.0%
+----------------EPOCH : 1------------------
+Gender : 0, Accuracy By Gender : 0.96%
+Gender : 1, Accuracy By Gender :  1.0%
+----------------EPOCH : 2------------------
+Gender : 0, Accuracy By Gender : 0.96%
+Gender : 1, Accuracy By Gender : 0.99%
+----------------EPOCH : 3------------------
+Gender : 0, Accuracy By Gender : 0.93%
+Gender : 1, Accuracy By Gender :  1.0%
+----------------EPOCH : 4------------------
+Gender : 0, Accuracy By Gender : 0.97%
+Gender : 1, Accuracy By Gender :  1.0%
+----------------EPOCH : 5------------------
+Gender : 0, Accuracy By Gender : 0.97%
+Gender : 1, Accuracy By Gender : 0.98%
+----------------EPOCH : 6------------------
+Gender : 0, Accuracy By Gender : 0.96%
+Gender : 1, Accuracy By Gender : 0.99%

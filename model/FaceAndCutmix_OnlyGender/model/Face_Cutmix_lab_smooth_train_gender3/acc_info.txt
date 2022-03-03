@@ -1,3 +1,0 @@
-----------------EPOCH : 0------------------
-Gender : 0, Accuracy By Gender : 0.96%
-Gender : 1, Accuracy By Gender :  1.0%

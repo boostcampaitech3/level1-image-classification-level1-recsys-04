@@ -143,6 +143,7 @@ def train(data_dir, model_dir, args):
     ).to(device)
     model = torch.nn.DataParallel(model)
 
+
     # -- loss & metric
     criterion = create_criterion(args.criterion)  # default: cross_entropy
     opt_module = getattr(import_module("torch.optim"), args.optimizer)  # default: SGD
@@ -167,7 +168,8 @@ def train(data_dir, model_dir, args):
         model.train()
         loss_value = 0
         matches = 0
-        for idx, train_batch in enumerate(train_loader):
+        pbar = tqdm(enumerate(train_loader), total= len(train_loader))
+        for idx, train_batch in pbar:#enumerate(tqdm(train_loader)):
             inputs, labels = train_batch
             inputs = inputs.to(device)
             labels = labels.to(device)
@@ -188,10 +190,12 @@ def train(data_dir, model_dir, args):
                 train_loss = loss_value / args.log_interval
                 train_acc = matches / args.batch_size / args.log_interval
                 current_lr = get_lr(optimizer)
-                print(
-                    f"Epoch[{epoch}/{args.epochs}]({idx + 1}/{len(train_loader)}) || "
-                    f"training loss {train_loss:4.4} || training accuracy {train_acc:4.2%} || lr {current_lr}"
-                )
+                pbar.set_postfix({
+                    "Epoch" : f"[{epoch}/{args.epochs}]",
+                    "Train/acc" : f"{train_acc:4.2%}",
+                    "Train/loss": f"{train_loss:4.4}",
+                    "lr": f"{current_lr}"
+                })
                 logger.add_scalar("Train/loss", train_loss, epoch * len(train_loader) + idx)
                 logger.add_scalar("Train/accuracy", train_acc, epoch * len(train_loader) + idx)
 
@@ -201,9 +205,6 @@ def train(data_dir, model_dir, args):
         scheduler.step()
         # torch.save(model.module.state_dict(), f"{save_dir}/best.pth")
         # val loop
-
-        if is_train_all:
-            continue
 
         with torch.no_grad():
             print("Calculating validation results...")
@@ -310,7 +311,7 @@ if __name__ == '__main__':
     # Data and model checkpoints directories
     parser.add_argument('--seed', type=int, default=42, help='random seed (default: 42)')
     parser.add_argument('--epochs', type=int, default=20, help='number of epochs to train (default: 1)')
-    parser.add_argument('--dataset', type=str, default='CutMixDataset', help='dataset augmentation type (default: MaskBaseDataset)')
+    parser.add_argument('--dataset', type=str, default='MaskSplitByProfileDataset', help='dataset augmentation type (default: MaskBaseDataset)')
     parser.add_argument('--augmentation', type=str, default='CustomAugmentation', help='data augmentation type (default: BaseAugmentation)')
     parser.add_argument("--resize", nargs="+", type=list, default=[380, 380], help='resize size for image when training')
     parser.add_argument('--batch_size', type=int, default=32, help='input batch size for training (default: 64)')
