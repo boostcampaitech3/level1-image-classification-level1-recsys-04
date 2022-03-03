@@ -17,8 +17,8 @@ from torch.utils.tensorboard import SummaryWriter
 
 from dataset import MaskBaseDataset, CustomAugmentation, CutMixDataset
 from loss import create_criterion
+from Wandb import CustomWandb
 from torch.optim.lr_scheduler import CosineAnnealingLR
-
 
 
 def seed_everything(seed):
@@ -157,6 +157,14 @@ def train(data_dir, model_dir, args):
     logger = SummaryWriter(log_dir=save_dir)
     with open(os.path.join(save_dir, 'config.json'), 'w', encoding='utf-8') as f:
         json.dump(vars(args), f, ensure_ascii=False, indent=4)
+    
+    ####################### Set Wandb Config #####################
+    wandb = CustomWandb()
+    wandb.set_project_name("Image_Classification")
+    wandb.set_run_name(args.run_name)
+    wandb.set_hpppm(args.batch_size, args.lr, args.epochs)
+    wandb.config()
+    ##############################################################
 
     best_val_acc = 0
     best_val_loss = np.inf
@@ -191,9 +199,15 @@ def train(data_dir, model_dir, args):
                 )
                 logger.add_scalar("Train/loss", train_loss, epoch * len(train_loader) + idx)
                 logger.add_scalar("Train/accuracy", train_acc, epoch * len(train_loader) + idx)
-
+                ########### Make Wandb Train metrics ###################
+                metrics = {"Train/loss": train_loss,
+                           "Train/accuracy": train_acc}
+                ########################################################
                 loss_value = 0
                 matches = 0
+
+            if idx == 0:
+                wandb.log_train_sample(inputs, labels)
 
         scheduler.step()
 
@@ -203,12 +217,17 @@ def train(data_dir, model_dir, args):
             model.eval()
             val_loss_items = []
             val_acc_items = []
+            ####################Adding Variables#######################
+            val_correct_label = np.array(range(18))
+            val_total_label = np.array(range(18))
+            miss_label = []
+            ###########################################################
             figure = None
             for val_batch in val_loader:
                 inputs, labels = val_batch
                 inputs = inputs.to(device)
                 labels = labels.to(device)
-
+                
                 outs = model(inputs)
                 preds = torch.argmax(outs, dim=-1)
 
@@ -216,7 +235,14 @@ def train(data_dir, model_dir, args):
                 acc_item = (labels == preds).sum().item()
                 val_loss_items.append(loss_item)
                 val_acc_items.append(acc_item)
-
+                #####################Counting Total Num and Correct Num#######################
+                for img, label, pred in zip(inputs, labels, preds) :
+                    if (label == pred) :
+                        val_correct_label[label] += 1
+                    else:
+                        miss_label.append((img, label, pred)) # add miss label data
+                    val_total_label[label] += 1
+                ##############################################################################
                 if figure is None:
                     inputs_np = torch.clone(inputs).detach().cpu().permute(0, 2, 3, 1).numpy()
                     inputs_np = dataset_module.denormalize_image(inputs_np, dataset.mean, dataset.std)
@@ -242,10 +268,23 @@ def train(data_dir, model_dir, args):
                 f"[Val] acc : {val_acc:4.2%}, loss: {val_loss:4.2} || "
                 f"best acc : {best_val_acc:4.2%}, best loss: {best_val_loss:4.2}"
             )
+            ##################### Added to log Accuracy & Loss ################################
+            wandb.log_3classifier_acc(val_correct_label, val_total_label)
+            val_metrics = {"Val/loss": val_loss,
+                           "Val/accuracy": val_acc,}
+            wandb.log(metrics, val_metrics)
+            ##################################################################################
+
             logger.add_scalar("Val/loss", val_loss, epoch)
             logger.add_scalar("Val/accuracy", val_acc, epoch)
             logger.add_figure("results", figure, epoch)
             print()
+    
+    ############### Log miss label & Finish ###################
+    wandb.plot_best_model(val_correct_label, val_total_label)
+    wandb.log_miss_label(miss_labels=miss_label)   # for best model
+    wandb.finish()
+    ###########################################################
 
 
 if __name__ == '__main__':
@@ -271,6 +310,7 @@ if __name__ == '__main__':
     parser.add_argument('--lr_decay_step', type=int, default=20, help='learning rate scheduler deacy step (default: 20)')
     parser.add_argument('--log_interval', type=int, default=20, help='how many batches to wait before logging training status')
     parser.add_argument('--name', default='BaseElimCutMix', help='model save at {SM_MODEL_DIR}/{name}')
+    parser.add_argument('--run_name', default=str, help='wandb run name (default: EfficientNet Run')
 
     # Container environment
     parser.add_argument('--data_dir', type=str, default=os.environ.get('SM_CHANNEL_TRAIN', '/opt/ml/input/data/train/images'))
