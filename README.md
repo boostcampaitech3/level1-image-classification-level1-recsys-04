@@ -110,7 +110,7 @@ DataProcessing
 - 풀어야 하는 문제
     - 마스크 착용 여부 (착용, 미착용, 오착용)
     - 성별 구분
-    - 연령대 (0~29, 30~59, 60~)
+    - 연령대 (0\~29, 30\~59, 60~)
 - 문제의 input과 output
     - input ⇒ 사람의 이미지
     - output ⇒ 0~17
@@ -172,7 +172,7 @@ DataProcessing
 6. 현재 하드웨어 상태 정보 확인 가능
 7. 같은 팀원들과 학습 기록/현황 공유, 비교 가능
 
-<img src="https://user-images.githubusercontent.com/91870042/156873202-b5a40a1f-5cd9-4320-a262-2135c1d4195b.png" alt="drawing" width="700"/>
+![image](https://user-images.githubusercontent.com/91870042/156873202-b5a40a1f-5cd9-4320-a262-2135c1d4195b.png)
 
 
 ## **최종 순위 및 결과**
