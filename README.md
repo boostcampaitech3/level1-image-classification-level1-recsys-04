@@ -13,6 +13,10 @@
 모델의 학습에 사용되는 패키지를 `requirements.txt`를 활용해서 설치진행
 ```shell
 pip install -r requirements.txt
+--------------------------------
+pip install python-dotenv
+pip install efficientnet_pytorch
+pip install facenet-pytorch
 ```
 모델의 train, test를 위해서 terminal이나 jupyternotebook 환경을 사용하며, 각 과정에서 사용되는 하이퍼파라미터나 경로들을 argument로 전달 가능하다.
 
