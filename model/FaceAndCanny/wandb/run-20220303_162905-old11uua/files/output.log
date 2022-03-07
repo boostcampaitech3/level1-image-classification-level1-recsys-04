@@ -1,0 +1,41 @@
+
+show_log_train_sample
+finish log
+finish train sample
+Epoch[0/10](20/412) || training loss 0.6314 || training accuracy 67.50% || lr 0.0001
+Epoch[0/10](40/412) || training loss 0.4538 || training accuracy 82.66% || lr 0.0001
+Epoch[0/10](60/412) || training loss 0.281 || training accuracy 89.84% || lr 0.0001
+Epoch[0/10](80/412) || training loss 0.2093 || training accuracy 91.72% || lr 0.0001
+Epoch[0/10](100/412) || training loss 0.1805 || training accuracy 93.28% || lr 0.0001
+Epoch[0/10](120/412) || training loss 0.1928 || training accuracy 91.88% || lr 0.0001
+Epoch[0/10](140/412) || training loss 0.1525 || training accuracy 94.06% || lr 0.0001
+Epoch[0/10](160/412) || training loss 0.123 || training accuracy 94.84% || lr 0.0001
+Epoch[0/10](180/412) || training loss 0.114 || training accuracy 95.62% || lr 0.0001
+Epoch[0/10](200/412) || training loss 0.1318 || training accuracy 95.62% || lr 0.0001
+Epoch[0/10](220/412) || training loss 0.09588 || training accuracy 97.19% || lr 0.0001
+Epoch[0/10](240/412) || training loss 0.07107 || training accuracy 97.66% || lr 0.0001
+Epoch[0/10](260/412) || training loss 0.08087 || training accuracy 96.72% || lr 0.0001
+Epoch[0/10](280/412) || training loss 0.05356 || training accuracy 98.28% || lr 0.0001
+Epoch[0/10](300/412) || training loss 0.09582 || training accuracy 96.88% || lr 0.0001
+Epoch[0/10](320/412) || training loss 0.08329 || training accuracy 96.72% || lr 0.0001
+Epoch[0/10](340/412) || training loss 0.107 || training accuracy 96.25% || lr 0.0001
+Epoch[0/10](360/412) || training loss 0.07186 || training accuracy 97.66% || lr 0.0001
+Epoch[0/10](380/412) || training loss 0.0775 || training accuracy 97.50% || lr 0.0001
+Epoch[0/10](400/412) || training loss 0.07642 || training accuracy 97.66% || lr 0.0001
+Calculating validation results...
+New best model for val accuracy : 94.77%! saving the best model..
+[Val] acc : 94.77%, loss: 0.13 || best acc : 94.77%, best loss: 0.13
+Traceback (most recent call last):
+  File "/opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCanny/train.py", line 329, in <module>
+    train(data_dir, model_dir, args)
+  File "/opt/ml/level1-image-classification-level1-recsys-04/model/FaceAndCanny/train.py", line 284, in train
+    logger.add_figure("results", figure, epoch)
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/tensorboard/writer.py", line 647, in add_figure
+    self.add_image(tag, figure_to_image(figure, close), global_step, walltime, dataformats='CHW')
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/tensorboard/_utils.py", line 35, in figure_to_image
+    image = render_to_rgb(figures)
+  File "/opt/conda/lib/python3.8/site-packages/torch/utils/tensorboard/_utils.py", line 21, in render_to_rgb
+    canvas = plt_backend_agg.FigureCanvasAgg(figure)
+  File "/opt/conda/lib/python3.8/site-packages/matplotlib/backend_bases.py", line 1623, in __init__
+    figure.set_canvas(self)
+AttributeError: 'NoneType' object has no attribute 'set_canvas'
