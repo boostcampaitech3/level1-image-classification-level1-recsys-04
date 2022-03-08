@@ -13,7 +13,8 @@ from torchvision.transforms import *
 
 from cutmix import cutmix
 from facenet_pytorch import MTCNN, InceptionResnetV1
-import PIL						 
+import PIL	
+import cv2					 
 
 #이미지 확장자의 종류를 담고 있는 리스트
 IMG_EXTENSIONS = [
@@ -46,14 +47,25 @@ class FaceDetect(object):
         return face
 
 
+class Canny(object):
+    def __init__(self):
+        self.tf = transforms.ToPILImage()
+
+    def __call__(self, tensor):
+        img = self.tf(tensor)
+        canny = cv2.cvtColor(np.array(img),cv2.IMREAD_GRAYSCALE) # pil -> numpy
+        canny = cv2.Canny(canny,50,100) # numpy
+        canny = canny[np.newaxis, ...]
+        return torch.tensor(canny).float()
+
+
 class BaseAugmentation:
     def __init__(self, resize=[380, 380], mean=(0.548, 0.504, 0.479), std=(0.237, 0.247, 0.246)):
         self.transform = transforms.Compose([
-            #Resize([380,380], Image.BILINEAR),
             ToTensor(),
             FaceDetect(size=resize),
-            Normalize(mean=mean, std=std),
-										   
+            Canny(),
+            Normalize(mean=mean, std=std)							   
         ])
 
     def __call__(self, image):
@@ -71,6 +83,20 @@ class CustomAugmentation:
             #CenterCrop((80,100)),
             #RandomErasing(p=0.5, scale=(0.02,0.4), ratio=(0.3,3)),
             RandomErasing(p=1, scale=(0.05,0.05), ratio=(0.5,1)),
+            Normalize(mean=mean, std=std)
+        ])
+
+    def __call__(self, image):
+        return self.transform(image)
+
+
+class AddCannyAugmentation:
+    def __init__(self, resize, mean, std, **args):
+        self.transform = transforms.Compose([
+            ToTensor(),
+            FaceDetect(size=resize),
+            RandomErasing(p=1, scale=(0.05,0.05), ratio=(0.5,1)),
+            Canny(),
             Normalize(mean=mean, std=std)
         ])
 
@@ -372,7 +398,6 @@ class CutMixDataset(MaskSplitByProfileDataset):
         self.age11_labels = []
         
         self.class_idx = [[] for i in range(0, 18)]  #클래스별 index
-        
         self.istrain = []
 
         super().__init__(data_dir, mean, std, val_ratio)
@@ -409,7 +434,7 @@ class CutMixDataset(MaskSplitByProfileDataset):
                     self.age_labels.append(age_label)
 
                     self.age11_labels.append(age11_label)
-
+                    
                     multi_class = self.encode_multi_class(mask_label,gender_label,age_label)
 
                     self.class_idx[multi_class].append(cnt)
